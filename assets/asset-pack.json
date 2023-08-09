@@ -1,0 +1,53 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/images/background_image.jpg",
+                "type": "image",
+                "key": "background_image"
+            },
+            {
+                "url": "src/scripts/GameManager.js",
+                "type": "script",
+                "key": "GameManager"
+            },
+            {
+                "url": "src/scripts/InputManager.js",
+                "type": "script",
+                "key": "InputManager"
+            },
+            {
+                "url": "assets/images/line_image.png",
+                "type": "image",
+                "key": "line_image"
+            },
+            {
+                "url": "assets/images/minus_image.png",
+                "type": "image",
+                "key": "minus_image"
+            },
+            {
+                "url": "assets/images/pluse_image.png",
+                "type": "image",
+                "key": "pluse_image"
+            },
+            {
+                "url": "src/scripts/SocketManager.js",
+                "type": "script",
+                "key": "SocketManager"
+            },
+            {
+                "url": "src/scripts/SoundManager.js",
+                "type": "script",
+                "key": "SoundManager"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}
