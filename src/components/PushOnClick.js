@@ -3,6 +3,9 @@
 
 /* START OF COMPILED CODE */
 
+/* START-USER-IMPORTS */
+/* END-USER-IMPORTS */
+
 class PushOnClick extends UserComponent {
 
 	constructor(gameObject) {
@@ -35,7 +38,15 @@ class PushOnClick extends UserComponent {
 				scaleX: "*=0.8",
 				scaleY: "*=0.8",
 				duration: 80,
-				yoyo: true
+				yoyo: true,
+				onComplete: () => {
+					if (this.gameObject.scene.scene.key == "Home") {
+						this.gameObject.scene.scene.start("Level");
+					}
+					else {
+						this.gameObject.scene.scene.restart("Level");
+					}
+				}
 			});
 		});
 	}

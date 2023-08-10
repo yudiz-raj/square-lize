@@ -2,14 +2,39 @@
     "section1": {
         "files": [
             {
-                "url": "assets/images/background_image.jpg",
+                "url": "assets/images/avatar_1.png",
                 "type": "image",
-                "key": "background_image"
+                "key": "avatar_1"
+            },
+            {
+                "url": "assets/images/avatar_2.png",
+                "type": "image",
+                "key": "avatar_2"
+            },
+            {
+                "url": "assets/images/background_image.png",
+                "type": "image",
+                "key": "background_image_1"
+            },
+            {
+                "url": "assets/images/draw_image.png",
+                "type": "image",
+                "key": "draw_image"
+            },
+            {
+                "url": "assets/images/gameBoard_image.png",
+                "type": "image",
+                "key": "gameBoard_image"
             },
             {
                 "url": "src/scripts/GameManager.js",
                 "type": "script",
                 "key": "GameManager"
+            },
+            {
+                "url": "src/scenes/Home.js",
+                "type": "sceneFile",
+                "key": "Home"
             },
             {
                 "url": "src/scripts/InputManager.js",
@@ -20,16 +45,6 @@
                 "url": "assets/images/line_image.png",
                 "type": "image",
                 "key": "line_image"
-            },
-            {
-                "url": "assets/images/minus_image.png",
-                "type": "image",
-                "key": "minus_image"
-            },
-            {
-                "url": "assets/images/pluse_image.png",
-                "type": "image",
-                "key": "pluse_image"
             },
             {
                 "url": "src/scripts/SocketManager.js",

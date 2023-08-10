@@ -17,383 +17,398 @@
             "list": [
                 {
                     "type": "Image",
-                    "id": "def5ab46-41a7-4e2e-b672-e95419f793a9",
-                    "label": "background",
+                    "id": "5d46afd3-a438-494b-a7af-29506b91623e",
+                    "label": "background_image_1",
                     "components": [],
                     "texture": {
-                        "key": "background_image"
+                        "key": "background_image_1"
                     },
-                    "x": 979,
-                    "y": 548,
-                    "scaleX": 0.5,
-                    "scaleY": 0.5
+                    "x": 960,
+                    "y": 540
+                },
+                {
+                    "type": "Text",
+                    "id": "5fd28f93-90a1-4893-a858-028496fae3bf",
+                    "label": "replay_button",
+                    "scope": "CLASS",
+                    "components": [
+                        "PushOnClick"
+                    ],
+                    "x": 960,
+                    "y": 1033,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "Replay",
+                    "fontFamily": "Barrio",
+                    "fontSize": "60px"
                 },
                 {
                     "type": "Container",
-                    "id": "1ec3a25f-9ed4-4386-a574-2a8b9b357f27",
+                    "id": "13b86611-0eff-4156-9ecb-6a2606061ffd",
                     "label": "container_boxs",
                     "scope": "CLASS",
                     "components": [],
                     "list": [
                         {
                             "type": "Rectangle",
-                            "id": "fd82b5bd-1279-4b33-8864-bed85f042433",
+                            "id": "64ec3c95-54a2-409a-a864-41b3a96c9a28",
                             "label": "box_1",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 949,
-                            "y": 400,
+                            "x": 915,
+                            "y": 314,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "53ac6683-6491-4f4e-b645-8c0561f57fa1",
+                            "id": "7c34ee6e-7a03-4ace-b3dc-206f31aa31f5",
                             "label": "box_2",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 1008,
-                            "y": 401,
+                            "x": 1006,
+                            "y": 315,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "7b3c3333-2be1-4d11-8b61-76c061e46320",
+                            "id": "50f1c764-fdbe-4f5d-9e29-8355dd4b3dc0",
                             "label": "box_3",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 889,
-                            "y": 460,
+                            "x": 824,
+                            "y": 404,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "615e1cea-fe9b-4fb5-953d-d1c1198a5d8f",
+                            "id": "912efd0f-b2a5-480c-b302-bdaac1123871",
                             "label": "box_4",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 949,
-                            "y": 460,
+                            "x": 915,
+                            "y": 404,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "11585af2-053e-40ab-975a-c1683a110041",
+                            "id": "0f398255-a75c-4e68-a682-8db0830e9458",
                             "label": "box_5",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 1009,
-                            "y": 460,
+                            "x": 1006,
+                            "y": 404,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "e89e4286-b16e-428f-9fdd-376e40f5a6c3",
+                            "id": "1968c0fe-292b-4dad-b3d8-612c0fb4b30c",
                             "label": "box_6",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 1069,
-                            "y": 460,
+                            "x": 1096,
+                            "y": 404,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "21c8f63d-5632-43be-b31c-6ea6366d31da",
+                            "id": "088b6209-4af2-432c-b841-97fcdde07b30",
                             "label": "box_7",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 830,
-                            "y": 519,
+                            "x": 732,
+                            "y": 494,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "22e87cf2-2dd9-4e4d-9e6e-f0611b12a8e5",
+                            "id": "8fb10240-578f-4a1e-89d7-a4ab5472c7f9",
                             "label": "box_8",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 890,
-                            "y": 519,
+                            "x": 824,
+                            "y": 496,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "462b7f14-5c55-4cca-9690-6267d67c7da3",
+                            "id": "4b6284f6-53d4-4254-a2d7-62c1d43d6c2c",
                             "label": "box_9",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 949,
-                            "y": 519,
+                            "x": 915,
+                            "y": 495,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "ef912b2c-ceeb-4576-addc-19f6defbf0ab",
+                            "id": "72df3a63-5b6f-41b9-a8dc-05035f0f7abf",
                             "label": "box_10",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 1009,
-                            "y": 519,
+                            "x": 1006,
+                            "y": 495,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "983fd0a0-c7b9-4538-aa56-63bd56e9110c",
+                            "id": "83e87b1e-5e40-4229-bf14-3867ccc0cd6a",
                             "label": "box_11",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 1070,
-                            "y": 520,
+                            "x": 1096,
+                            "y": 495,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "55e4b662-2917-425e-b521-1eef2e1582b3",
+                            "id": "d6c9d3d7-6941-411b-8253-7f7e5d7f3dfc",
                             "label": "box_12",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 1129,
-                            "y": 518,
+                            "x": 1187,
+                            "y": 495,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "60d850df-b5a5-44e7-a5c9-6c02c2e78614",
+                            "id": "ba4a6c1f-1584-4a86-a6d1-6481baa4578e",
                             "label": "box_13",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 830,
-                            "y": 577,
+                            "x": 732,
+                            "y": 586,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "659d19ac-b57a-409a-9feb-441602909cf1",
+                            "id": "aa705b00-1766-4efa-8a82-097e24314f21",
                             "label": "box_14",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 889,
-                            "y": 578,
+                            "x": 824,
+                            "y": 585,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "7f44331b-689e-4799-8ec6-e9bb54ced79a",
+                            "id": "5f51fe6e-48a9-4fe8-866a-1d26f8eb0882",
                             "label": "box_15",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 950,
-                            "y": 578,
+                            "x": 915,
+                            "y": 585,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "3068079a-23e4-4f85-ac77-ea6d0043d4b4",
+                            "id": "a25d903b-736c-4000-928b-edf16934d0d7",
                             "label": "box_16",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 1009,
-                            "y": 578,
+                            "x": 1006,
+                            "y": 585,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "fc688a0a-e556-43c9-b4c6-48538ddc093c",
+                            "id": "182c88d3-ce1f-4973-a86c-470f00fdd7e5",
                             "label": "box_17",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 1069,
-                            "y": 578,
+                            "x": 1096,
+                            "y": 585,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "6c3954c4-6db3-4cfb-9d91-ffaf629353b4",
+                            "id": "8347277b-f1e4-45c3-b562-3b20027bd4b8",
                             "label": "box_18",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 1128,
-                            "y": 579,
+                            "x": 1187,
+                            "y": 585,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "bb3ece5f-ca51-4b49-a3cd-6f2937252570",
+                            "id": "1f67eabb-4008-4630-804b-da3470a56059",
                             "label": "box_19",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 889,
-                            "y": 639,
+                            "x": 824,
+                            "y": 677,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "49976a4e-ef11-4275-b547-e513ca527645",
+                            "id": "6477ac95-51ab-4cf6-a7e3-ab9c492ed946",
                             "label": "box_20",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 950,
-                            "y": 639,
+                            "x": 915,
+                            "y": 677,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "ae308f1e-6889-41ae-b7b2-702f96774a89",
+                            "id": "acdd14b7-119d-4abc-9bf9-1b35676252b6",
                             "label": "box_21",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 1010,
-                            "y": 638,
+                            "x": 1006,
+                            "y": 677,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "ade7746d-badd-4f12-a606-03039cd36aa8",
+                            "id": "d6cf713f-3417-470a-9154-64304bb19d07",
                             "label": "box_22",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 1069,
-                            "y": 638,
+                            "x": 1096,
+                            "y": 677,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "60fa1413-a236-4f2e-9f2b-b75dc8aa201f",
+                            "id": "0a8a2a45-bd12-43bf-b356-4d90b35dc236",
                             "label": "box_23",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 949,
-                            "y": 696,
+                            "x": 915,
+                            "y": 766,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         },
                         {
                             "type": "Rectangle",
-                            "id": "27df4360-ed0c-4e9f-9e02-be9f9a81d1da",
+                            "id": "73a67a2b-8d89-47f9-8a6f-43c2e12d4fb2",
                             "label": "box_24",
                             "useGameObjectName": true,
                             "components": [],
-                            "x": 1008,
-                            "y": 696,
+                            "x": 1006,
+                            "y": 766,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
                             "visible": false,
                             "isFilled": true,
-                            "width": 110,
-                            "height": 110
+                            "width": 170,
+                            "height": 170
                         }
                     ]
                 },
@@ -403,7 +418,8 @@
                     "label": "container_lines",
                     "scope": "CLASS",
                     "components": [],
-                    "y": 4,
+                    "x": 592,
+                    "y": 185,
                     "list": [
                         {
                             "type": "Image",
@@ -414,10 +430,15 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 921,
-                            "y": 396,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12
+                            "x": 277,
+                            "y": 129,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -428,11 +449,16 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 950,
-                            "y": 366,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "angle": 90
+                            "x": 324,
+                            "y": 83,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "angle": 90,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -443,14 +469,10 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 979,
-                            "y": 395,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
+                            "x": 369,
+                            "y": 131,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "tintFill": true
                         },
                         {
@@ -462,15 +484,11 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 950,
-                            "y": 426,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
+                            "x": 324,
+                            "y": 173,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "angle": 90,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
                             "tintFill": true
                         },
                         {
@@ -482,11 +500,16 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1010,
-                            "y": 366,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "angle": 90
+                            "x": 414,
+                            "y": 83,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "angle": 90,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -497,10 +520,15 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1039,
-                            "y": 395,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12
+                            "x": 459,
+                            "y": 128,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -511,15 +539,11 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1010,
-                            "y": 426,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
+                            "x": 412,
+                            "y": 173,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "angle": 90,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
                             "tintFill": true
                         },
                         {
@@ -531,10 +555,15 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 860,
-                            "y": 456,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12
+                            "x": 186,
+                            "y": 218,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -545,11 +574,16 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 890,
-                            "y": 427,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "angle": 90
+                            "x": 231,
+                            "y": 173,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "angle": 90,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -560,14 +594,10 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 919,
-                            "y": 456,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
+                            "x": 277,
+                            "y": 223,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "tintFill": true
                         },
                         {
@@ -579,15 +609,11 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 890,
-                            "y": 485,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
+                            "x": 233,
+                            "y": 263,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "angle": 90,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
                             "tintFill": true
                         },
                         {
@@ -599,14 +625,10 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 979,
-                            "y": 456,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
+                            "x": 369,
+                            "y": 223,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "tintFill": true
                         },
                         {
@@ -618,15 +640,11 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 950,
-                            "y": 485,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
+                            "x": 321,
+                            "y": 263,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "angle": 90,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
                             "tintFill": true
                         },
                         {
@@ -638,14 +656,10 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1039,
-                            "y": 455,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
+                            "x": 459,
+                            "y": 217,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "tintFill": true
                         },
                         {
@@ -657,15 +671,11 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1010,
-                            "y": 485,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
+                            "x": 413,
+                            "y": 263,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "angle": 90,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
                             "tintFill": true
                         },
                         {
@@ -677,11 +687,16 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1069,
-                            "y": 426,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "angle": 90
+                            "x": 505,
+                            "y": 172,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "angle": 90,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -692,10 +707,15 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1098,
-                            "y": 455,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12
+                            "x": 550,
+                            "y": 218,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -706,15 +726,11 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1069,
-                            "y": 485,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
+                            "x": 505,
+                            "y": 263,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "angle": 90,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
                             "tintFill": true
                         },
                         {
@@ -726,10 +742,15 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 801,
-                            "y": 516,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12
+                            "x": 93,
+                            "y": 308,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -740,11 +761,16 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 830,
-                            "y": 485,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "angle": 90
+                            "x": 139,
+                            "y": 263,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "angle": 90,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -755,14 +781,10 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 860,
-                            "y": 516,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
+                            "x": 186,
+                            "y": 313,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "tintFill": true
                         },
                         {
@@ -774,15 +796,11 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 830,
-                            "y": 545,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
+                            "x": 138,
+                            "y": 356,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "angle": 90,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
                             "tintFill": true
                         },
                         {
@@ -794,14 +812,10 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 919,
-                            "y": 516,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
+                            "x": 277,
+                            "y": 307,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "tintFill": true
                         },
                         {
@@ -813,15 +827,11 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 890,
-                            "y": 545,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
+                            "x": 232,
+                            "y": 356,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "angle": 90,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
                             "tintFill": true
                         },
                         {
@@ -833,14 +843,10 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 979,
-                            "y": 515,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
+                            "x": 369,
+                            "y": 310,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "tintFill": true
                         },
                         {
@@ -852,15 +858,11 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 950,
-                            "y": 545,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
+                            "x": 326,
+                            "y": 356,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "angle": 90,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
                             "tintFill": true
                         },
                         {
@@ -872,14 +874,10 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1039,
-                            "y": 515,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
+                            "x": 459,
+                            "y": 310,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "tintFill": true
                         },
                         {
@@ -891,15 +889,11 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1010,
-                            "y": 545,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
+                            "x": 412,
+                            "y": 356,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "angle": 90,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
                             "tintFill": true
                         },
                         {
@@ -911,14 +905,10 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1098,
-                            "y": 515,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
+                            "x": 550,
+                            "y": 311,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "tintFill": true
                         },
                         {
@@ -930,15 +920,11 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1070,
-                            "y": 545,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
+                            "x": 506,
+                            "y": 356,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "angle": 90,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
                             "tintFill": true
                         },
                         {
@@ -950,11 +936,16 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1128,
-                            "y": 485,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "angle": 90
+                            "x": 596,
+                            "y": 263,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "angle": 90,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -965,10 +956,15 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1157,
-                            "y": 515,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12
+                            "x": 640,
+                            "y": 309,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -979,15 +975,11 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1128,
-                            "y": 545,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
+                            "x": 595,
+                            "y": 356,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "angle": 90,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
                             "tintFill": true
                         },
                         {
@@ -999,10 +991,15 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 801,
-                            "y": 574,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12
+                            "x": 93,
+                            "y": 403,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -1013,14 +1010,10 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 860,
-                            "y": 575,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
+                            "x": 186,
+                            "y": 402,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "tintFill": true
                         },
                         {
@@ -1032,11 +1025,16 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 830,
-                            "y": 604,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "angle": 90
+                            "x": 138,
+                            "y": 448,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "angle": 90,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -1047,14 +1045,10 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 919,
-                            "y": 575,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
+                            "x": 277,
+                            "y": 403,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "tintFill": true
                         },
                         {
@@ -1066,15 +1060,11 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 890,
-                            "y": 604,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
+                            "x": 231,
+                            "y": 448,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "angle": 90,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
                             "tintFill": true
                         },
                         {
@@ -1086,14 +1076,10 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 979,
-                            "y": 575,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
+                            "x": 369,
+                            "y": 402,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "tintFill": true
                         },
                         {
@@ -1105,15 +1091,11 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 950,
-                            "y": 604,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
+                            "x": 327,
+                            "y": 448,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "angle": 90,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
                             "tintFill": true
                         },
                         {
@@ -1125,14 +1107,10 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1039,
-                            "y": 575,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
+                            "x": 459,
+                            "y": 403,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "tintFill": true
                         },
                         {
@@ -1144,15 +1122,11 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1009,
-                            "y": 604,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
+                            "x": 418,
+                            "y": 448,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "angle": 90,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
                             "tintFill": true
                         },
                         {
@@ -1164,14 +1138,10 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1098,
-                            "y": 575,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
+                            "x": 550,
+                            "y": 403,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "tintFill": true
                         },
                         {
@@ -1183,15 +1153,11 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1069,
-                            "y": 604,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
+                            "x": 505,
+                            "y": 448,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "angle": 90,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
                             "tintFill": true
                         },
                         {
@@ -1203,10 +1169,15 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1157,
-                            "y": 574,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12
+                            "x": 640,
+                            "y": 398,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -1217,11 +1188,16 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1128,
-                            "y": 604,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "angle": 90
+                            "x": 595,
+                            "y": 448,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "angle": 90,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -1232,10 +1208,15 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 860,
-                            "y": 633,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12
+                            "x": 186,
+                            "y": 493,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -1246,14 +1227,10 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 919,
-                            "y": 633,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
+                            "x": 277,
+                            "y": 491,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "tintFill": true
                         },
                         {
@@ -1265,11 +1242,16 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 890,
-                            "y": 662,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "angle": 90
+                            "x": 231,
+                            "y": 538,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "angle": 90,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -1280,14 +1262,10 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 979,
-                            "y": 633,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
+                            "x": 369,
+                            "y": 493,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "tintFill": true
                         },
                         {
@@ -1299,15 +1277,11 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 950,
-                            "y": 662,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
+                            "x": 322,
+                            "y": 538,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "angle": 90,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
                             "tintFill": true
                         },
                         {
@@ -1319,14 +1293,10 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1039,
-                            "y": 633,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
+                            "x": 459,
+                            "y": 493,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "tintFill": true
                         },
                         {
@@ -1338,15 +1308,11 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1009,
-                            "y": 662,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
+                            "x": 414,
+                            "y": 538,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "angle": 90,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
                             "tintFill": true
                         },
                         {
@@ -1358,10 +1324,15 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1098,
-                            "y": 633,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12
+                            "x": 550,
+                            "y": 494,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -1372,11 +1343,16 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1069,
-                            "y": 662,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "angle": 90
+                            "x": 504,
+                            "y": 538,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "angle": 90,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -1387,10 +1363,15 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 919,
-                            "y": 692,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12
+                            "x": 277,
+                            "y": 582,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -1401,14 +1382,10 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 979,
-                            "y": 692,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "tintTopLeft": "#7f7d7d",
-                            "tintTopRight": "#7f7d7d",
-                            "tintBottomLeft": "#7f7d7d",
-                            "tintBottomRight": "#7f7d7d",
+                            "x": 369,
+                            "y": 582,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
                             "tintFill": true
                         },
                         {
@@ -1420,11 +1397,16 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 949,
-                            "y": 721,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "angle": 90
+                            "x": 323,
+                            "y": 627,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "angle": 90,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -1435,10 +1417,15 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1039,
-                            "y": 692,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12
+                            "x": 459,
+                            "y": 582,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
                         },
                         {
                             "type": "Image",
@@ -1449,42 +1436,140 @@
                             "texture": {
                                 "key": "line_image"
                             },
-                            "x": 1009,
-                            "y": 721,
-                            "scaleX": 0.35,
-                            "scaleY": 0.12,
-                            "angle": 90
+                            "x": 413,
+                            "y": 627,
+                            "scaleX": 0.4,
+                            "scaleY": 0.19,
+                            "angle": 90,
+                            "tintTopLeft": "#D4DB23",
+                            "tintTopRight": "#D4DB23",
+                            "tintBottomLeft": "#D4DB23",
+                            "tintBottomRight": "#D4DB23",
+                            "tintFill": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "6fa2056f-e045-43f6-9fee-881b42172d65",
+                    "label": "container_turnDetails",
+                    "components": [],
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "eff037ba-40ce-4856-be1d-7878a05cec5a",
+                            "label": "turnImage",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "avatar_1"
+                            },
+                            "x": 191,
+                            "y": 483
+                        },
+                        {
+                            "type": "Text",
+                            "id": "82e4b4d7-b7f4-4e9b-826d-04bcf7d8f169",
+                            "label": "turnText",
+                            "components": [],
+                            "x": 352.5,
+                            "y": 483,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Turn",
+                            "fontFamily": "Barrio",
+                            "fontSize": "60px",
+                            "fontStyle": "bold"
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "07e275a9-0f7b-4d85-9c5f-db4c520ce240",
+                    "label": "container_players",
+                    "components": [],
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "e8a038ef-5714-4d65-bc58-115bdc980342",
+                            "label": "player_1",
+                            "components": [],
+                            "texture": {
+                                "key": "avatar_1"
+                            },
+                            "x": 1436,
+                            "y": 284
+                        },
+                        {
+                            "type": "Text",
+                            "id": "62673c87-a438-4ad5-99e9-dd3c326900f4",
+                            "label": "scoreTitle",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 1407,
+                            "y": 174,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "score:",
+                            "fontFamily": "Barrio",
+                            "fontSize": "48px"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "31325ca9-8b8c-4408-9329-6061170bc938",
+                            "label": "player_1Score",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 1515,
+                            "y": 174,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "0",
+                            "fontFamily": "Barrio",
+                            "fontSize": "48px"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "455e12eb-14c1-4586-8e68-e98d5c2edd5a",
+                            "label": "player_2",
+                            "components": [],
+                            "texture": {
+                                "key": "avatar_2"
+                            },
+                            "x": 1436,
+                            "y": 798
+                        },
+                        {
+                            "type": "Text",
+                            "id": "3baade8e-c6ed-4241-a046-266d2a1150d3",
+                            "label": "scoreTitle_1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 1407,
+                            "y": 908,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "score:",
+                            "fontFamily": "Barrio",
+                            "fontSize": "48px"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "c41ca513-ad0e-4a52-aacf-cf41d2eb9898",
+                            "label": "player_2Score",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 1515,
+                            "y": 908,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "0",
+                            "fontFamily": "Barrio",
+                            "fontSize": "48px"
                         }
                     ]
                 }
             ]
-        },
-        {
-            "type": "Image",
-            "id": "eff037ba-40ce-4856-be1d-7878a05cec5a",
-            "label": "turn",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pluse_image"
-            },
-            "x": 143,
-            "y": 483,
-            "scaleX": 0.5,
-            "scaleY": 0.5
-        },
-        {
-            "type": "Text",
-            "id": "82e4b4d7-b7f4-4e9b-826d-04bcf7d8f169",
-            "label": "text_1",
-            "components": [],
-            "x": 348.5,
-            "y": 482.21484375,
-            "originX": 0.5,
-            "originY": 0.5,
-            "text": "Turn",
-            "fontSize": "60px",
-            "fontStyle": "bold"
         }
     ],
     "plainObjects": [],

@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<title>Square Lize</title>
+	<title>Squarelize</title>
 
 	<script src="lib/phaser.min.js"></script>
 	<script src="src/components/UserComponent.js"></script>
@@ -14,20 +14,48 @@
 	<script src="src/scenes/Preload.js"></script>
 	<script src="src/scenes/Level.js"></script>
 	<script src="src/main.js"></script>
+	<link rel="stylesheet preload" as="font" href="assets/fonts/Barrio-Regular.ttf" type="font/ttf" crossorigin />
+
 
 	<style>
+		@font-face {
+			font-family: Barrio;
+			src: url('assets/fonts/Barrio-Regular.ttf');
+		}
+		
 		body {
-			background: #2f2f2f;
 			margin: 0;
 			padding: 0;
+			background: rgb(67, 77, 52);
+			background: linear-gradient(9deg, rgba(67, 77, 52, 1) 0%, rgba(21, 32, 57, 1) 54%, rgba(201, 208, 37, 1) 100%);
+			background-size: 400% 400%;
+			height: 100vh;
+			animation: gradient 5s ease infinite;
+		}
+
+		@keyframes gradient {
+			0% {
+				background-position: 0% 50%;
+			}
+
+			50% {
+				background-position: 100% 50%;
+			}
+
+			100% {
+				background-position: 0% 50%;
+			}
 		}
 	</style>
 
 </head>
 
 <body>
+
 	<script>
 		let userTurn = true;
+		let player_1Score = 0;
+		let player_2Score = 0;
 	</script>
 </body>
 

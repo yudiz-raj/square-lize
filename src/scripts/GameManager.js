@@ -1,5 +1,6 @@
 let aBox = [], aCompletedBox = [];
-let sSignName;
+let sSignName, sWinnerName;
+
 class GameManager {
     constructor(oScene) {
         this.oScene = oScene;
@@ -225,22 +226,51 @@ class GameManager {
         ]
     }
 
+    checkForWinner() {
+        if (aCompletedBox.length == 24) {
+            if (player_1Score > player_2Score) {
+                sWinnerName = "avatar_1";
+            }
+            if (player_1Score == player_2Score) {
+                sWinnerName = "draw_image";
+            }
+            if (player_1Score < player_2Score) {
+                sWinnerName = "avatar_2";
+            }
+
+            player_1Score = 0;
+            player_2Score = 0;
+            this.oScene.add.image(960, 910, sWinnerName);
+            this.oScene.replay_button.setVisible(true);
+            
+        }
+    }
+
     turnHandler(aBox) {
+        let repeatTurn = false;
 
         aBox.forEach((box, index) => {
             if (box.firstSide == 'selected' && box.secondSide == 'selected' && box.thirdSide == 'selected' && box.fourthSide == 'selected') {
-                console.log(...aCompletedBox);
                 if (!aCompletedBox.includes(index)) {
                     aCompletedBox.push(index);
 
-                    userTurn ? sSignName = "pluse_image" : sSignName = "minus_image";
-                    const sign = this.oScene.add.image(this.oScene.container_boxs.list[index].x, this.oScene.container_boxs.list[index].y, sSignName).setScale(0.1);
+                    userTurn ? sSignName = "avatar_1" : sSignName = "avatar_2";
+                    userTurn ? player_1Score++ : player_2Score++;
+                    this.oScene.player_1Score.setText(player_1Score);
+                    this.oScene.player_2Score.setText(player_2Score);
+                    const sign = this.oScene.add.image(this.oScene.container_boxs.list[index].x, this.oScene.container_boxs.list[index].y, sSignName).setScale(0.5);
+                    repeatTurn = true;
                 }
-
             }
         })
-        console.log(aBox[0].filled);
-        userTurn = !userTurn;
-        userTurn ? this.oScene.turn.setTexture("pluse_image") : this.oScene.turn.setTexture("minus_image");
+
+        this.checkForWinner();
+
+        if (!repeatTurn) {
+            console.log(repeatTurn);
+            userTurn = !userTurn;
+        }
+
+        userTurn ? this.oScene.turnImage.setTexture("avatar_1") : this.oScene.turnImage.setTexture("avatar_2");
     }
 }
