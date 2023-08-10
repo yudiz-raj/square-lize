@@ -13,6 +13,17 @@
     },
     "displayList": [
         {
+            "type": "Image",
+            "id": "96ed7c66-a85a-4e39-999f-847e0fbbd781",
+            "label": "loading_background",
+            "components": [],
+            "texture": {
+                "key": "loading_background"
+            },
+            "x": 960,
+            "y": 540
+        },
+        {
             "type": "Text",
             "id": "2ce42443-5227-4c9b-b498-e81f9a21cde3",
             "label": "progress",
@@ -20,11 +31,12 @@
                 "PreloadText"
             ],
             "x": 960,
-            "y": 540,
+            "y": 816,
             "originX": 0.5,
             "originY": 0.5,
             "text": "0%",
-            "fontSize": "54px"
+            "fontFamily": "Barrio",
+            "fontSize": "60px"
         }
     ],
     "plainObjects": [],
