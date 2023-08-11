@@ -967,13 +967,11 @@ class Level extends Phaser.Scene {
 					line.name = 'selected';
 					line.setTintFill(13949731, 13949731, 13949731, 13949731);
 					this.oGameManager.boxs();
-					this.oGameManager.turnHandler(aBox);
+					this.oGameManager.turnHandler();
 					line.disableInteractive();
 				})
 			}
 		})
-
-
 	}
 
 	/* END-USER-CODE */
