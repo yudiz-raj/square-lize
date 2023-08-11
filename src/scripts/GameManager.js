@@ -1,5 +1,5 @@
 let aBox = [], aCompletedBox = [];
-let sSignName, sWinnerName;
+let sSignName, sWinnerName, winner_image;
 
 class GameManager {
     constructor(oScene) {
@@ -74,7 +74,7 @@ class GameManager {
             {
                 filled: false,
                 firstSide: this.oScene.container_lines.list[20].name,
-                secondSide: this.oScene.container_lines.list[0].name,
+                secondSide: this.oScene.container_lines.list[10].name,
                 thirdSide: this.oScene.container_lines.list[22].name,
                 fourthSide: this.oScene.container_lines.list[23].name,
 
@@ -240,10 +240,22 @@ class GameManager {
 
             player_1Score = 0;
             player_2Score = 0;
-            this.oScene.add.image(960, 910, sWinnerName);
-            this.oScene.replay_button.setVisible(true);
-            
+            winner_image = this.oScene.add.image(960, 540, sWinnerName).setScale(5);
+            this.winnerImageAnimation();
         }
+    }
+
+    winnerImageAnimation() {
+        this.oScene.add.tween({
+            targets: winner_image,
+            scaleX: 2,
+            scaleY: 2,
+            ease: "power2",
+            duration: 2000,
+            onComplete: () => {
+                this.oScene.replay_button.setVisible(true);
+            }
+        })
     }
 
     turnHandler(aBox) {
