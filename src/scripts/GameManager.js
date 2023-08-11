@@ -279,7 +279,6 @@ class GameManager {
         this.checkForWinner();
 
         if (!repeatTurn) {
-            console.log(repeatTurn);
             userTurn = !userTurn;
         }
 
