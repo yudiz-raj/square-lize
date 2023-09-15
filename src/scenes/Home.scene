@@ -10,14 +10,113 @@
     },
     "displayList": [
         {
-            "type": "Image",
-            "id": "cd05ba7b-067e-4c0c-bc6d-5935e880c27a",
-            "label": "background",
-            "texture": {
-                "key": "background"
-            },
-            "x": 960,
-            "y": 540
+            "type": "Container",
+            "id": "1d355646-3c2e-4bab-b2e5-19b4d61b325d",
+            "label": "body",
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "cd05ba7b-067e-4c0c-bc6d-5935e880c27a",
+                    "label": "background",
+                    "texture": {
+                        "key": "background"
+                    },
+                    "x": 960,
+                    "y": 540
+                },
+                {
+                    "prefabId": "05171882-e5f4-4e95-bcc0-d1d580ce4d21",
+                    "id": "01f2839e-0b1c-4d11-aaf0-4118941dd9dd",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "logoPrefab",
+                    "x": 591,
+                    "y": 497
+                },
+                {
+                    "type": "Container",
+                    "id": "e134f9c6-ba36-40dd-9816-9745eb43d874",
+                    "label": "container_loading",
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "7255148a-953b-4646-b6b2-7935c407bc20",
+                            "label": "loading_bar",
+                            "texture": {
+                                "key": "loading_bar"
+                            },
+                            "x": 960,
+                            "y": 887
+                        },
+                        {
+                            "type": "Image",
+                            "id": "1990ec7b-a3c2-45e0-ae7e-05dd080d4130",
+                            "label": "loading",
+                            "scope": "CLASS",
+                            "texture": {
+                                "key": "loading"
+                            },
+                            "x": 479,
+                            "y": 887
+                        },
+                        {
+                            "type": "Text",
+                            "id": "233a5823-3581-49b4-b6eb-682773d37eb6",
+                            "label": "LoadingTxt",
+                            "scope": "CLASS",
+                            "x": 792,
+                            "y": 836,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "tintTopLeft": "#B59981",
+                            "tintTopRight": "#B59981",
+                            "tintBottomLeft": "#B59981",
+                            "tintBottomRight": "#B59981",
+                            "text": "Loading...",
+                            "align": "center",
+                            "fontFamily": "Washington",
+                            "fontSize": "42px"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "0ddc29f6-7a50-4f2a-91cd-756418546c1b",
+                            "label": "percentageTxt",
+                            "scope": "CLASS",
+                            "x": 1129,
+                            "y": 836,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "tintTopLeft": "#B59981",
+                            "tintTopRight": "#B59981",
+                            "tintBottomLeft": "#B59981",
+                            "tintBottomRight": "#B59981",
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Washington",
+                            "fontSize": "48px"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "dfa34e00-d8e7-4530-9630-05e28bc19b23",
+                            "label": "percentageTxt_1",
+                            "x": 1177,
+                            "y": 836,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "tintTopLeft": "#B59981",
+                            "tintTopRight": "#B59981",
+                            "tintBottomLeft": "#B59981",
+                            "tintBottomRight": "#B59981",
+                            "text": "%",
+                            "align": "center",
+                            "fontFamily": "Washington",
+                            "fontSize": "48px"
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "plainObjects": [],

@@ -22,14 +22,19 @@ class Preload extends Phaser.Scene {
 	/** @returns {void} */
 	editorCreate() {
 
-		// loading_background
-		this.add.image(960, 540, "loading_background");
-
 		// progress
 		const progress = this.add.text(960, 816, "", {});
 		progress.setOrigin(0.5, 0.5);
+		progress.visible = false;
 		progress.text = "0%";
 		progress.setStyle({ "fontFamily": "Barrio", "fontSize": "60px" });
+
+		// background
+		this.add.image(960, 540, "background");
+
+		// logoPrefab
+		const logoPrefab = new LogoPrefab(this, 591, 497);
+		this.add.existing(logoPrefab);
 
 		// progress (components)
 		new PreloadText(progress);
@@ -47,7 +52,7 @@ class Preload extends Phaser.Scene {
 
 		this.editorPreload();
 
-		this.load.on(Phaser.Loader.Events.COMPLETE, () => this.scene.start("Level"));
+		this.load.on(Phaser.Loader.Events.COMPLETE, () => this.scene.start("Home"));
 	}
 
 	/* END-USER-CODE */

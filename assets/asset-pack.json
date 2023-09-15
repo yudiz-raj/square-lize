@@ -2,21 +2,6 @@
     "section1": {
         "files": [
             {
-                "url": "assets/images/avatar_1.png",
-                "type": "image",
-                "key": "avatar_1"
-            },
-            {
-                "url": "assets/images/avatar_2.png",
-                "type": "image",
-                "key": "avatar_2"
-            },
-            {
-                "url": "assets/images/background.png",
-                "type": "image",
-                "key": "background"
-            },
-            {
                 "url": "assets/images/backward.png",
                 "type": "image",
                 "key": "backward"
@@ -45,6 +30,16 @@
                 "url": "src/scripts/InputManager.js",
                 "type": "script",
                 "key": "InputManager"
+            },
+            {
+                "url": "assets/images/loading.png",
+                "type": "image",
+                "key": "loading"
+            },
+            {
+                "url": "assets/images/loading_bar.png",
+                "type": "image",
+                "key": "loading_bar"
             },
             {
                 "url": "assets/images/music.png",
