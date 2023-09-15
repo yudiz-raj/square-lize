@@ -16,22 +16,8 @@ class Home extends Phaser.Scene {
 	/** @returns {void} */
 	editorCreate() {
 
-		// background_image_1
-		this.add.image(960, 540, "background_image_1");
-
-		// Start_button
-		const start_button = this.add.text(960, 540, "", {});
-		start_button.setOrigin(0.5, 0.5);
-		start_button.tintFill = true;
-		start_button.tintTopLeft = 13949731;
-		start_button.tintTopRight = 13949731;
-		start_button.tintBottomLeft = 13949731;
-		start_button.tintBottomRight = 13949731;
-		start_button.text = "start game";
-		start_button.setStyle({ "fontFamily": "Barrio", "fontSize": "60px" });
-
-		// start_button (components)
-		new PushOnClick(start_button);
+		// background
+		this.add.image(960, 540, "background");
 
 		this.events.emit("scene-awake");
 	}

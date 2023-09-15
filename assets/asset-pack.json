@@ -12,9 +12,14 @@
                 "key": "avatar_2"
             },
             {
-                "url": "assets/images/background_image.png",
+                "url": "assets/images/background.png",
                 "type": "image",
-                "key": "background_image_1"
+                "key": "background"
+            },
+            {
+                "url": "assets/images/backward.png",
+                "type": "image",
+                "key": "backward"
             },
             {
                 "url": "assets/images/draw_image.png",
@@ -22,9 +27,9 @@
                 "key": "draw_image"
             },
             {
-                "url": "assets/images/gameBoard_image.png",
+                "url": "assets/images/gameBoard.png",
                 "type": "image",
-                "key": "gameBoard_image"
+                "key": "gameBoard"
             },
             {
                 "url": "src/scripts/GameManager.js",
@@ -42,9 +47,49 @@
                 "key": "InputManager"
             },
             {
-                "url": "assets/images/line_image.png",
+                "url": "assets/images/music.png",
                 "type": "image",
-                "key": "line_image"
+                "key": "music"
+            },
+            {
+                "url": "assets/images/notSelectedLine.png",
+                "type": "image",
+                "key": "notSelectedLine"
+            },
+            {
+                "url": "assets/images/pause.png",
+                "type": "image",
+                "key": "pause"
+            },
+            {
+                "url": "assets/images/player_1.png",
+                "type": "image",
+                "key": "player_1"
+            },
+            {
+                "url": "assets/images/player_2.png",
+                "type": "image",
+                "key": "player_2"
+            },
+            {
+                "url": "assets/images/resume.png",
+                "type": "image",
+                "key": "resume"
+            },
+            {
+                "url": "assets/images/selectedLine.png",
+                "type": "image",
+                "key": "SelectedLine"
+            },
+            {
+                "url": "assets/images/setting.png",
+                "type": "image",
+                "key": "setting"
+            },
+            {
+                "url": "assets/images/setting_bar.png",
+                "type": "image",
+                "key": "setting_bar"
             },
             {
                 "url": "src/scripts/SocketManager.js",
@@ -52,9 +97,34 @@
                 "key": "SocketManager"
             },
             {
+                "url": "assets/images/sound.png",
+                "type": "image",
+                "key": "sound"
+            },
+            {
                 "url": "src/scripts/SoundManager.js",
                 "type": "script",
                 "key": "SoundManager"
+            },
+            {
+                "url": "assets/images/stop.png",
+                "type": "image",
+                "key": "stop"
+            },
+            {
+                "url": "assets/images/timer.png",
+                "type": "image",
+                "key": "timer"
+            },
+            {
+                "url": "src/scripts/TweenManager.js",
+                "type": "script",
+                "key": "TweenManager"
+            },
+            {
+                "url": "assets/images/winner.png",
+                "type": "image",
+                "key": "winner"
             }
         ]
     },

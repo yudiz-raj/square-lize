@@ -11,34 +11,13 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "579f772f-dc19-4e2f-bddc-efaff3e26f20",
-            "label": "background_image_1",
-            "components": [],
+            "id": "cd05ba7b-067e-4c0c-bc6d-5935e880c27a",
+            "label": "background",
             "texture": {
-                "key": "background_image_1"
+                "key": "background"
             },
             "x": 960,
             "y": 540
-        },
-        {
-            "type": "Text",
-            "id": "a67fea19-22c3-48be-abc5-1dae6521d25a",
-            "label": "Start_button",
-            "components": [
-                "PushOnClick"
-            ],
-            "x": 960,
-            "y": 540,
-            "originX": 0.5,
-            "originY": 0.5,
-            "tintTopLeft": "#D4DB23",
-            "tintTopRight": "#D4DB23",
-            "tintBottomLeft": "#D4DB23",
-            "tintBottomRight": "#D4DB23",
-            "tintFill": true,
-            "text": "start game",
-            "fontFamily": "Barrio",
-            "fontSize": "60px"
         }
     ],
     "plainObjects": [],
@@ -46,6 +25,6 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     }
 }
