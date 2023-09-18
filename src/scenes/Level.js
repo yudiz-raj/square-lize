@@ -724,7 +724,7 @@ class Level extends Phaser.Scene {
 		container_players.add(player_1Time);
 
 		// scoreTitle
-		const scoreTitle = this.add.text(464, 627, "", {});
+		const scoreTitle = this.add.text(497, 640, "", {});
 		scoreTitle.setOrigin(0.5, 0.5);
 		scoreTitle.tintTopLeft = 11901313;
 		scoreTitle.tintTopRight = 11901313;
@@ -735,7 +735,7 @@ class Level extends Phaser.Scene {
 		container_players.add(scoreTitle);
 
 		// player_1Score
-		const player_1Score = this.add.text(464, 676, "", {});
+		const player_1Score = this.add.text(497, 692, "", {});
 		player_1Score.setOrigin(0.5, 0.5);
 		player_1Score.tintTopLeft = 11901313;
 		player_1Score.tintTopRight = 11901313;

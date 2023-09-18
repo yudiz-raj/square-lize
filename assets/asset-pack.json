@@ -7,9 +7,14 @@
                 "key": "backward"
             },
             {
-                "url": "assets/images/draw_image.png",
+                "url": "assets/images/bothPlayer.png",
                 "type": "image",
-                "key": "draw_image"
+                "key": "bothPlayer"
+            },
+            {
+                "url": "assets/images/draw.png",
+                "type": "image",
+                "key": "draw"
             },
             {
                 "url": "assets/images/gameBoard.png",

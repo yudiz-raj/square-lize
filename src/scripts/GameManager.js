@@ -167,7 +167,8 @@ class GameManager {
                 sWinnerName = "avatar_1";
             }
             if (nPlayer_1Score == nPlayer_2Score) {
-                sWinnerName = "draw_image";
+                sWinnerName = "bothPlayer";
+                this.oScene.winner.setTexture("draw");
             }
             if (nPlayer_1Score < nPlayer_2Score) {
                 sWinnerName = "avatar_2";
@@ -184,7 +185,6 @@ class GameManager {
                 sWinnerName = "avatar_1";
                 this.winnerDeclaration(sWinnerName);
             }
-
         }
     }
     winnerDeclaration(sWinnerName) {
@@ -194,6 +194,10 @@ class GameManager {
         nLifePlayer_2 = 0;
         nPlayer_1Score = 0;
         nPlayer_2Score = 0;
+        this.oScene.pause.disableInteractive();
+        this.oScene.container_lines.list.forEach((line) => {
+            line.disableInteractive();
+        });
         clearInterval(this.timerInterval);
         winner_image = this.oScene.add.image(960, 540, sWinnerName).setScale(5);
         aCompletedBox.splice(0, aCompletedBox.length);
@@ -252,11 +256,13 @@ class GameManager {
         time = maxTime;
         this.oScene.oTweenManager.userTurnAnimation(userTurn);
         this.timerInterval = setInterval(() => {
-            userTurn ? this.oScene.player_1Time.setText("00:" + time) : this.oScene.player_2Time.setText("00:" + time);
-            if (time > 0 && winner == false) {
+            time >= 10 ?
+                userTurn ? this.oScene.player_1Time.setText("00:" + time) : this.oScene.player_2Time.setText("00:" + time) :
+                userTurn ? this.oScene.player_1Time.setText("00:0" + time) : this.oScene.player_2Time.setText("00:0" + time);
+            if (time >= 0 && winner == false) {
                 time--;
             }
-            if (time <= 0 && winner == false) {
+            if (time < 0 && winner == false) {
                 userTurn ? nLifePlayer_1++ : nLifePlayer_2++;
                 switch (userTurn ? nLifePlayer_1 : nLifePlayer_2) {
                     case 1:
