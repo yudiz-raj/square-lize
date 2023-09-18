@@ -1,6 +1,8 @@
 let aBox = [], aCompletedBox = [];
 let sSignName, sWinnerName, winner_image;
 let time = 15;
+let nLifePlayer_1 = 0;
+let nLifePlayer_2 = 0;
 let winner = false;
 let userTurn = true;
 let nPlayer_1Score = 0;
@@ -170,28 +172,55 @@ class GameManager {
             if (nPlayer_1Score < nPlayer_2Score) {
                 sWinnerName = "avatar_2";
             }
-            winner = true;
-            time = 15;
-            nPlayer_1Score = 0;
-            nPlayer_2Score = 0;
-            clearInterval(this.timerInterval);
-            winner_image = this.oScene.add.image(960, 540, sWinnerName).setScale(5);
-            aCompletedBox.splice(0, aCompletedBox.length);
-            this.oScene.oTweenManager.winnerImageAnimation(winner_image);
+            this.winnerDeclaration(sWinnerName);
         }
+        else {
+
+            if (nLifePlayer_1 == 3) {
+                sWinnerName = "avatar_2";
+                this.winnerDeclaration(sWinnerName);
+            }
+            if (nLifePlayer_2 == 3) {
+                sWinnerName = "avatar_1";
+                this.winnerDeclaration(sWinnerName);
+            }
+
+        }
+    }
+    winnerDeclaration(sWinnerName) {
+        winner = true;
+        time = 15;
+        nLifePlayer_1 = 0;
+        nLifePlayer_2 = 0;
+        nPlayer_1Score = 0;
+        nPlayer_2Score = 0;
+        clearInterval(this.timerInterval);
+        winner_image = this.oScene.add.image(960, 540, sWinnerName).setScale(5);
+        aCompletedBox.splice(0, aCompletedBox.length);
+        this.oScene.oTweenManager.winnerImageAnimation(winner_image);
     }
     setPauseButtonEnabled() {
         this.oScene.restart.setInteractive().on("pointerdown", () => {
-			nPlayer_1Score = 0;
+            this.oScene.container_lines.list.forEach((line) => {
+                line.name = "";
+            });
+            nLifePlayer_1 = 0;
+            nLifePlayer_2 = 0;
+            nPlayer_1Score = 0;
             nPlayer_2Score = 0;
             clearInterval(this.timerInterval);
             time = 15;
             winner = false;
             aCompletedBox.splice(0, aCompletedBox.length);
             this.oScene.scene.restart("Level");
-		});
+        });
         this.oScene.stop.setInteractive().on("pointerdown", () => {
-			nPlayer_1Score = 0;
+            this.oScene.container_lines.list.forEach((line) => {
+                line.name = "";
+            });
+            nLifePlayer_1 = 0;
+            nLifePlayer_2 = 0;
+            nPlayer_1Score = 0;
             nPlayer_2Score = 0;
             clearInterval(this.timerInterval);
             time = 15;
@@ -199,7 +228,7 @@ class GameManager {
             aCompletedBox.splice(0, aCompletedBox.length);
             this.oScene.scene.stop("Level");
             this.oScene.scene.start("Home");
-		});
+        });
         this.oScene.pause.setInteractive().on("pointerdown", () => {
             if (this.oScene.pause.texture.key == "pause") {
                 this.oScene.pause.setTexture("resume");
@@ -223,13 +252,31 @@ class GameManager {
         time = maxTime;
         this.oScene.oTweenManager.userTurnAnimation(userTurn);
         this.timerInterval = setInterval(() => {
-            userTurn ? this.oScene.player_1Time.setText(time + " Seconds") : this.oScene.player_2Time.setText(time + " Seconds");
+            userTurn ? this.oScene.player_1Time.setText("00:" + time) : this.oScene.player_2Time.setText("00:" + time);
             if (time > 0 && winner == false) {
                 time--;
-            } 
-            if(time <= 0 && winner == false) {
-                time = 15;
-                this.turnHandler();
+            }
+            if (time <= 0 && winner == false) {
+                userTurn ? nLifePlayer_1++ : nLifePlayer_2++;
+                switch (userTurn ? nLifePlayer_1 : nLifePlayer_2) {
+                    case 1:
+                        userTurn ? this.oScene.container_player_1Life.list[2].setAlpha(0.5) : this.oScene.container_player_2Life.list[2].setAlpha(0.5);
+                        time = 15;
+                        this.turnHandler();
+                        break;
+                    case 2:
+                        userTurn ? this.oScene.container_player_1Life.list[1].setAlpha(0.5) : this.oScene.container_player_2Life.list[1].setAlpha(0.5);
+                        time = 15;
+                        this.turnHandler();
+                        break;
+                    case 3:
+                        userTurn ? this.oScene.container_player_1Life.list[0].setAlpha(0.5) : this.oScene.container_player_2Life.list[0].setAlpha(0.5);
+                        this.checkForWinner();
+                        break;
+                    default:
+                        time = 15;
+                        this.turnHandler();
+                }
             }
         }, 1000);
     }

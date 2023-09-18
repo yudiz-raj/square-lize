@@ -60,10 +60,10 @@ class TweenManager {
     }
     userTurnAnimation(userTurn) {
         let target;
-        userTurn ? target = this.oScene.timer_1 : target = this.oScene.timer_2;
+        userTurn ? target = this.oScene.player_1_image : target = this.oScene.player_2_image;
         if (this.userTurnTween) {
-            this.oScene.timer_1.setScale(1, 1);
-            this.oScene.timer_2.setScale(1, 1);
+            this.oScene.player_1_image.setScale(1.3, 1.3);
+            this.oScene.player_2_image.setScale(1.3, 1.3);
             this.userTurnTween.stop();
         }
         this.userTurnTween = this.oScene.add.tween({

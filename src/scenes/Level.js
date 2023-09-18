@@ -712,26 +712,14 @@ class Level extends Phaser.Scene {
 		player_1.scaleY = 0.8;
 		container_players.add(player_1);
 
-		// player_1Txt
-		const player_1Txt = this.add.text(472, 316, "", {});
-		player_1Txt.angle = 4;
-		player_1Txt.setOrigin(0.5, 0.5);
-		player_1Txt.tintTopLeft = 8415232;
-		player_1Txt.tintTopRight = 8415232;
-		player_1Txt.tintBottomLeft = 8415232;
-		player_1Txt.tintBottomRight = 8415232;
-		player_1Txt.text = "Player 1";
-		player_1Txt.setStyle({ "fontFamily": "Washington", "fontSize": "50px" });
-		container_players.add(player_1Txt);
-
 		// player_1Time
-		const player_1Time = this.add.text(498, 550, "", {});
+		const player_1Time = this.add.text(493, 544, "", {});
 		player_1Time.setOrigin(0.5, 0.5);
 		player_1Time.tintTopLeft = 12223488;
 		player_1Time.tintTopRight = 12223488;
 		player_1Time.tintBottomLeft = 12223488;
 		player_1Time.tintBottomRight = 12223488;
-		player_1Time.text = "15 Seconds";
+		player_1Time.text = "00:15";
 		player_1Time.setStyle({ "fontFamily": "Washington", "fontSize": "30px" });
 		container_players.add(player_1Time);
 
@@ -763,26 +751,14 @@ class Level extends Phaser.Scene {
 		player_2.scaleY = 0.8;
 		container_players.add(player_2);
 
-		// player_2Txt
-		const player_2Txt = this.add.text(1488, 492, "", {});
-		player_2Txt.angle = -5;
-		player_2Txt.setOrigin(0.5, 0.5);
-		player_2Txt.tintTopLeft = 22912;
-		player_2Txt.tintTopRight = 22912;
-		player_2Txt.tintBottomLeft = 22912;
-		player_2Txt.tintBottomRight = 22912;
-		player_2Txt.text = "Player 2";
-		player_2Txt.setStyle({ "fontFamily": "Washington", "fontSize": "50px" });
-		container_players.add(player_2Txt);
-
 		// player_2Time
-		const player_2Time = this.add.text(1529, 734, "", {});
+		const player_2Time = this.add.text(1508, 712, "", {});
 		player_2Time.setOrigin(0.5, 0.5);
 		player_2Time.tintTopLeft = 32442;
 		player_2Time.tintTopRight = 32442;
 		player_2Time.tintBottomLeft = 32442;
 		player_2Time.tintBottomRight = 32442;
-		player_2Time.text = "15 Seconds";
+		player_2Time.text = "00:15";
 		player_2Time.setStyle({ "fontFamily": "Washington", "fontSize": "30px" });
 		container_players.add(player_2Time);
 
@@ -857,24 +833,68 @@ class Level extends Phaser.Scene {
 		stop.scaleY = 0.7;
 		container_timer.add(stop);
 
-		// timer_1
-		const timer_1 = this.add.image(416, 550, "timer");
-		container_timer.add(timer_1);
+		// container_player_2Life
+		const container_player_2Life = this.add.container(1463, 746);
+		container_timer.add(container_player_2Life);
 
-		// timer_2
-		const timer_2 = this.add.image(1447, 734, "timer");
-		timer_2.tintFill = true;
-		timer_2.tintTopLeft = 32442;
-		timer_2.tintTopRight = 32442;
-		timer_2.tintBottomLeft = 32442;
-		timer_2.tintBottomRight = 32442;
-		container_timer.add(timer_2);
+		// timer_1Player_2
+		const timer_1Player_2 = this.add.image(0, 0, "timer");
+		timer_1Player_2.tintFill = true;
+		timer_1Player_2.tintTopLeft = 32442;
+		timer_1Player_2.tintTopRight = 32442;
+		timer_1Player_2.tintBottomLeft = 32442;
+		timer_1Player_2.tintBottomRight = 32442;
+		container_player_2Life.add(timer_1Player_2);
+
+		// timer_2Player_2
+		const timer_2Player_2 = this.add.image(46, 0, "timer");
+		timer_2Player_2.tintFill = true;
+		timer_2Player_2.tintTopLeft = 32442;
+		timer_2Player_2.tintTopRight = 32442;
+		timer_2Player_2.tintBottomLeft = 32442;
+		timer_2Player_2.tintBottomRight = 32442;
+		container_player_2Life.add(timer_2Player_2);
+
+		// timer_3Player_2
+		const timer_3Player_2 = this.add.image(92, 0, "timer");
+		timer_3Player_2.tintFill = true;
+		timer_3Player_2.tintTopLeft = 32442;
+		timer_3Player_2.tintTopRight = 32442;
+		timer_3Player_2.tintBottomLeft = 32442;
+		timer_3Player_2.tintBottomRight = 32442;
+		container_player_2Life.add(timer_3Player_2);
+
+		// container_player_1Life
+		const container_player_1Life = this.add.container(448, 583);
+		container_timer.add(container_player_1Life);
+
+		// timer_1Player_1
+		const timer_1Player_1 = this.add.image(0, 0, "timer");
+		container_player_1Life.add(timer_1Player_1);
+
+		// timer_2Player_1
+		const timer_2Player_1 = this.add.image(46, 0, "timer");
+		container_player_1Life.add(timer_2Player_1);
+
+		// timer_3Player_1
+		const timer_3Player_1 = this.add.image(92, 0, "timer");
+		container_player_1Life.add(timer_3Player_1);
 
 		// winner
 		const winner = this.add.image(960, -63, "winner");
 		winner.scaleX = 0.8;
 		winner.scaleY = 0.8;
 		body.add(winner);
+
+		// player_1_image
+		const player_1_image = this.add.image(497, 443, "avatar_1");
+		player_1_image.scaleX = 1.3;
+		player_1_image.scaleY = 1.3;
+
+		// player_2_image
+		const player_2_image = this.add.image(1505, 610, "avatar_2");
+		player_2_image.scaleX = 1.3;
+		player_2_image.scaleY = 1.3;
 
 		this.container_boxs = container_boxs;
 		this.container_lines = container_lines;
@@ -891,9 +911,17 @@ class Level extends Phaser.Scene {
 		this.pause = pause;
 		this.restart = restart;
 		this.stop = stop;
-		this.timer_1 = timer_1;
-		this.timer_2 = timer_2;
+		this.timer_1Player_2 = timer_1Player_2;
+		this.timer_2Player_2 = timer_2Player_2;
+		this.timer_3Player_2 = timer_3Player_2;
+		this.container_player_2Life = container_player_2Life;
+		this.timer_1Player_1 = timer_1Player_1;
+		this.timer_2Player_1 = timer_2Player_1;
+		this.timer_3Player_1 = timer_3Player_1;
+		this.container_player_1Life = container_player_1Life;
 		this.winner = winner;
+		this.player_1_image = player_1_image;
+		this.player_2_image = player_2_image;
 
 		this.events.emit("scene-awake");
 	}
@@ -929,11 +957,27 @@ class Level extends Phaser.Scene {
 	/** @type {Phaser.GameObjects.Image} */
 	stop;
 	/** @type {Phaser.GameObjects.Image} */
-	timer_1;
+	timer_1Player_2;
 	/** @type {Phaser.GameObjects.Image} */
-	timer_2;
+	timer_2Player_2;
+	/** @type {Phaser.GameObjects.Image} */
+	timer_3Player_2;
+	/** @type {Phaser.GameObjects.Container} */
+	container_player_2Life;
+	/** @type {Phaser.GameObjects.Image} */
+	timer_1Player_1;
+	/** @type {Phaser.GameObjects.Image} */
+	timer_2Player_1;
+	/** @type {Phaser.GameObjects.Image} */
+	timer_3Player_1;
+	/** @type {Phaser.GameObjects.Container} */
+	container_player_1Life;
 	/** @type {Phaser.GameObjects.Image} */
 	winner;
+	/** @type {Phaser.GameObjects.Image} */
+	player_1_image;
+	/** @type {Phaser.GameObjects.Image} */
+	player_2_image;
 
 	/* START-USER-CODE */
 
@@ -953,6 +997,7 @@ class Level extends Phaser.Scene {
 		this.container_lines.list.forEach((line) => {
 			if (line.texture.key == "SelectedLine") {
 				line.name = 'selected';
+				this.oGameManager.boxs();
 				line.disableInteractive();
 			}
 			else {
