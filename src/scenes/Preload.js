@@ -39,8 +39,13 @@ class Preload extends Phaser.Scene {
 		// progress (components)
 		new PreloadText(progress);
 
+		this.logoPrefab = logoPrefab;
+
 		this.events.emit("scene-awake");
 	}
+
+	/** @type {LogoPrefab} */
+	logoPrefab;
 
 	/* START-USER-CODE */
 
@@ -51,7 +56,6 @@ class Preload extends Phaser.Scene {
 		this.editorCreate();
 
 		this.editorPreload();
-
 		this.load.on(Phaser.Loader.Events.COMPLETE, () => this.scene.start("Home"));
 	}
 

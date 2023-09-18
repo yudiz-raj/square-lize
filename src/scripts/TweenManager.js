@@ -2,6 +2,26 @@ class TweenManager {
     constructor(oScene) {
         this.oScene = oScene;
     }
+    logoAnimation() {
+        this.oScene.add.tween({
+            targets: this.oScene.logoPrefab.avatar_1,
+            angle: 10,
+            ease: "power2",
+            duration: 800,
+            yoyo: true,
+            // repeat: -1,
+            onComplete: () => {
+                this.oScene.add.tween({
+                    targets: this.oScene.logoPrefab.avatar_2,
+                    angle: -30,
+                    ease: "power2",
+                    duration: 800,
+                    yoyo: true,
+                    // repeat: -1,
+                });
+            }
+        })
+    }
     settingAnimation() {
         if (this.oScene.setting_bar.scaleX == 1) {
             this.scale = 0;

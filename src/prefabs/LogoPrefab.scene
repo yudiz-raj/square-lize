@@ -32,11 +32,13 @@
                     "texture": {
                         "key": "avatar_1"
                     },
-                    "x": 50,
-                    "y": 150,
+                    "x": 95.9012451171875,
+                    "y": 51.564456939697266,
                     "scaleX": 1.2,
                     "scaleY": 1.2,
-                    "angle": -20
+                    "angle": -20,
+                    "originX": 1,
+                    "originY": 0
                 },
                 {
                     "type": "Image",
@@ -47,9 +49,10 @@
                         "key": "avatar_2"
                     },
                     "x": 150,
-                    "y": 140,
+                    "y": 69.5999984741211,
                     "scaleX": 1.1,
-                    "scaleY": 1.1
+                    "scaleY": 1.1,
+                    "originY": 0
                 }
             ]
         }

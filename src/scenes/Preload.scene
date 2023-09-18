@@ -46,6 +46,7 @@
                 "y"
             ],
             "label": "logoPrefab",
+            "scope": "CLASS",
             "x": 591,
             "y": 497
         }

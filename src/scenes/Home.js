@@ -72,6 +72,7 @@ class Home extends Phaser.Scene {
 		percentageTxt_1.setStyle({ "align": "center", "fontFamily": "Washington", "fontSize": "48px" });
 		container_loading.add(percentageTxt_1);
 
+		this.logoPrefab = logoPrefab;
 		this.loading = loading;
 		this.loadingTxt = loadingTxt;
 		this.percentageTxt = percentageTxt;
@@ -79,6 +80,8 @@ class Home extends Phaser.Scene {
 		this.events.emit("scene-awake");
 	}
 
+	/** @type {LogoPrefab} */
+	logoPrefab;
 	/** @type {Phaser.GameObjects.Image} */
 	loading;
 	/** @type {Phaser.GameObjects.Text} */
@@ -93,10 +96,12 @@ class Home extends Phaser.Scene {
 	create() {
 
 		this.editorCreate();
+		this.oTweenManager = new TweenManager(this);
 		let shape = this.make.graphics();
 		shape.fillRect(727, 860, 512, 64);
 		const mask = shape.createGeometryMask();
 		this.loading.setMask(mask);
+		this.oTweenManager.logoAnimation();
 		this.timeInterval = setInterval(() => {
 			if (nPercentage < 100) {
 				nPercentage++;
@@ -107,11 +112,11 @@ class Home extends Phaser.Scene {
 				this.scene.stop("Home");
 				this.scene.start("Level");	
 			}
-		}, 80);
+		}, 40);
 	}
 	update() {
 		if (this.loading.x <= 960) {
-			this.loading.x++;			
+			this.loading.x += 2;			
 		}	
 	}
 
