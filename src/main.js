@@ -12,8 +12,8 @@ const init = () => {
 		width: 1920,
 		height: 1080,
 		type: Phaser.AUTO,
-		backgroundColor: "#242424",
 		parent: "game-division",
+		transparent: true,
 		scale: {
 			mode: Phaser.Scale.FIT,
 			autoCenter: Phaser.Scale.CENTER_BOTH,
