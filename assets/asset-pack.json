@@ -12,6 +12,11 @@
                 "key": "bothPlayer"
             },
             {
+                "url": "assets/images/computer.png",
+                "type": "image",
+                "key": "computer"
+            },
+            {
                 "url": "assets/images/draw.png",
                 "type": "image",
                 "key": "draw"
@@ -67,9 +72,19 @@
                 "key": "player_1"
             },
             {
+                "url": "assets/images/player_1Icon.png",
+                "type": "image",
+                "key": "player_1Icon"
+            },
+            {
                 "url": "assets/images/player_2.png",
                 "type": "image",
                 "key": "player_2"
+            },
+            {
+                "url": "assets/images/player_2Icon.png",
+                "type": "image",
+                "key": "player_2Icon"
             },
             {
                 "url": "assets/images/resume.png",
@@ -77,7 +92,7 @@
                 "key": "resume"
             },
             {
-                "url": "assets/images/selectedLine.png",
+                "url": "assets/images/SelectedLine.png",
                 "type": "image",
                 "key": "SelectedLine"
             },

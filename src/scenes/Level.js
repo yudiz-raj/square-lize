@@ -1,4 +1,5 @@
 // You can write more code here
+let aNotSelectedLines = [];
 /* START OF COMPILED CODE */
 
 class Level extends Phaser.Scene {
@@ -250,84 +251,84 @@ class Level extends Phaser.Scene {
 		body.add(container_lines);
 
 		// line_1
-		const line_1 = this.add.image(1541, 63, "SelectedLine");
+		const line_1 = this.add.image(1539, 55, "SelectedLine");
 		line_1.name = "line_1";
-		line_1.scaleY = 1.21;
+		line_1.scaleY = 1.25;
 		line_1.angle = -180;
 		line_1.setOrigin(0.5, 1);
 		container_lines.add(line_1);
 
 		// line_2
-		const line_2 = this.add.image(1539, 67, "SelectedLine");
+		const line_2 = this.add.image(1536, 58, "SelectedLine");
 		line_2.name = "line_2";
-		line_2.scaleY = 1.24;
+		line_2.scaleY = 1.26;
 		line_2.angle = -90;
 		line_2.setOrigin(0.5, 0);
 		container_lines.add(line_2);
 
 		// line_3
-		const line_3 = this.add.image(1626, 64, "notSelectedLine");
+		const line_3 = this.add.image(1625, 56, "notSelectedLine");
 		line_3.name = "line_3";
-		line_3.scaleY = 1.193;
+		line_3.scaleY = 1.22;
 		line_3.setOrigin(0.5, 0);
 		container_lines.add(line_3);
 
 		// line_4
-		const line_4 = this.add.image(1539, 146, "notSelectedLine");
+		const line_4 = this.add.image(1536, 142, "notSelectedLine");
 		line_4.name = "line_4";
-		line_4.scaleY = 1.24;
+		line_4.scaleY = 1.26;
 		line_4.angle = -90;
 		line_4.setOrigin(0.5, 0);
 		container_lines.add(line_4);
 
 		// line_5
-		const line_5 = this.add.image(1624, 65, "SelectedLine");
+		const line_5 = this.add.image(1622, 58, "SelectedLine");
 		line_5.name = "line_5";
-		line_5.scaleY = 1.139;
+		line_5.scaleY = 1.18;
 		line_5.angle = -90;
 		line_5.setOrigin(0.5, 0);
 		container_lines.add(line_5);
 
 		// line_6
-		const line_6 = this.add.image(1703, 63, "SelectedLine");
+		const line_6 = this.add.image(1705, 55, "SelectedLine");
 		line_6.name = "line_6";
-		line_6.scaleY = 1.208;
+		line_6.scaleY = 1.24;
 		line_6.setOrigin(0.5, 0);
 		container_lines.add(line_6);
 
 		// line_7
-		const line_7 = this.add.image(1624, 147, "notSelectedLine");
+		const line_7 = this.add.image(1623, 142, "notSelectedLine");
 		line_7.name = "line_7";
-		line_7.scaleY = 1.14;
+		line_7.scaleY = 1.16;
 		line_7.angle = -90;
 		line_7.setOrigin(0.5, 0);
 		container_lines.add(line_7);
 
 		// line_8
-		const line_8 = this.add.image(1464, 144, "SelectedLine");
+		const line_8 = this.add.image(1458, 139, "SelectedLine");
 		line_8.name = "line_8";
-		line_8.scaleY = 1.19;
+		line_8.scaleY = 1.23;
 		line_8.angle = -180;
 		line_8.setOrigin(0.5, 1);
 		container_lines.add(line_8);
 
 		// line_9
-		const line_9 = this.add.image(1461, 146, "SelectedLine");
+		const line_9 = this.add.image(1455, 142, "SelectedLine");
 		line_9.name = "line_9";
-		line_9.scaleY = 1.15;
+		line_9.scaleY = 1.22;
 		line_9.angle = -90;
 		line_9.setOrigin(0.5, 0);
 		container_lines.add(line_9);
 
 		// line_10
-		const line_10 = this.add.image(1542, 142, "notSelectedLine");
+		const line_10 = this.add.image(1539, 145, "notSelectedLine");
 		line_10.name = "line_10";
-		line_10.scaleY = 1.18;
+		line_10.scaleY = 1.15;
 		line_10.setOrigin(0.5, 0);
 		container_lines.add(line_10);
 
 		// line_11
-		const line_11 = this.add.image(1460, 227, "notSelectedLine");
+		const line_11 = this.add.image(1455, 225, "notSelectedLine");
 		line_11.name = "line_11";
 		line_11.scaleY = 1.16;
 		line_11.angle = 90;
@@ -335,7 +336,7 @@ class Level extends Phaser.Scene {
 		container_lines.add(line_11);
 
 		// line_12
-		const line_12 = this.add.image(1626, 144, "notSelectedLine");
+		const line_12 = this.add.image(1625, 140, "notSelectedLine");
 		line_12.name = "line_12";
 		line_12.scaleY = 1.18;
 		line_12.angle = -180;
@@ -343,7 +344,7 @@ class Level extends Phaser.Scene {
 		container_lines.add(line_12);
 
 		// line_13
-		const line_13 = this.add.image(1540, 227, "notSelectedLine");
+		const line_13 = this.add.image(1537, 225, "notSelectedLine");
 		line_13.name = "line_13";
 		line_13.scaleY = 1.22;
 		line_13.angle = 90;
@@ -351,82 +352,82 @@ class Level extends Phaser.Scene {
 		container_lines.add(line_13);
 
 		// line_14
-		const line_14 = this.add.image(1703, 144, "notSelectedLine");
+		const line_14 = this.add.image(1705, 140, "notSelectedLine");
 		line_14.name = "line_14";
 		line_14.scaleY = 1.18;
 		line_14.setOrigin(0.5, 0);
 		container_lines.add(line_14);
 
 		// line_15
-		const line_15 = this.add.image(1624, 227, "notSelectedLine");
+		const line_15 = this.add.image(1623, 225, "notSelectedLine");
 		line_15.name = "line_15";
-		line_15.scaleY = 1.12;
+		line_15.scaleY = 1.16;
 		line_15.angle = 90;
 		line_15.setOrigin(0.5, 1);
 		container_lines.add(line_15);
 
 		// line_16
-		const line_16 = this.add.image(1701, 147, "SelectedLine");
+		const line_16 = this.add.image(1702, 142, "SelectedLine");
 		line_16.name = "line_16";
-		line_16.scaleY = 1.209;
+		line_16.scaleY = 1.24;
 		line_16.angle = -90;
 		line_16.setOrigin(0.5, 0);
 		container_lines.add(line_16);
 
 		// line_17
-		const line_17 = this.add.image(1786, 144, "SelectedLine");
+		const line_17 = this.add.image(1789, 139, "SelectedLine");
 		line_17.name = "line_17";
 		line_17.scaleY = 1.18;
 		line_17.setOrigin(0.5, 0);
 		container_lines.add(line_17);
 
 		// line_18
-		const line_18 = this.add.image(1701, 226, "notSelectedLine");
+		const line_18 = this.add.image(1703, 225, "notSelectedLine");
 		line_18.name = "line_18";
-		line_18.scaleY = 1.19;
+		line_18.scaleY = 1.24;
 		line_18.angle = 90;
 		line_18.setOrigin(0.5, 1);
 		container_lines.add(line_18);
 
 		// line_19
-		const line_19 = this.add.image(1384, 225, "SelectedLine");
+		const line_19 = this.add.image(1376, 222, "SelectedLine");
 		line_19.name = "line_19";
-		line_19.scaleY = 1.18;
+		line_19.scaleY = 1.23;
 		line_19.setOrigin(0.5, 0);
 		container_lines.add(line_19);
 
 		// line_20
-		const line_20 = this.add.image(1381, 229, "SelectedLine");
+		const line_20 = this.add.image(1373, 225, "SelectedLine");
 		line_20.name = "line_20";
-		line_20.scaleY = 1.17;
+		line_20.scaleY = 1.23;
 		line_20.angle = 90;
 		line_20.setOrigin(0.5, 1);
 		container_lines.add(line_20);
 
 		// line_21
-		const line_21 = this.add.image(1463, 225, "notSelectedLine");
+		const line_21 = this.add.image(1458, 227, "notSelectedLine");
 		line_21.name = "line_21";
-		line_21.scaleY = 1.18;
+		line_21.scaleY = 1.14;
 		line_21.setOrigin(0.5, 0);
 		container_lines.add(line_21);
 
 		// line_22
-		const line_22 = this.add.image(1381, 308, "notSelectedLine");
+		const line_22 = this.add.image(1373, 308, "notSelectedLine");
 		line_22.name = "line_22";
-		line_22.scaleY = 1.16;
+		line_22.scaleY = 1.21;
 		line_22.angle = 90;
 		line_22.setOrigin(0.5, 1);
 		container_lines.add(line_22);
 
 		// line_23
-		const line_23 = this.add.image(1542, 225, "notSelectedLine");
+		const line_23 = this.add.image(1539, 223, "notSelectedLine");
 		line_23.name = "line_23";
-		line_23.scaleY = 1.18;
+		line_23.scaleY = 1.2;
 		line_23.setOrigin(0.5, 0);
 		container_lines.add(line_23);
 
 		// line_24
-		const line_24 = this.add.image(1461, 308, "notSelectedLine");
+		const line_24 = this.add.image(1456, 308, "notSelectedLine");
 		line_24.name = "line_24";
 		line_24.scaleY = 1.16;
 		line_24.angle = 90;
@@ -434,164 +435,164 @@ class Level extends Phaser.Scene {
 		container_lines.add(line_24);
 
 		// line_25
-		const line_25 = this.add.image(1626, 225, "notSelectedLine");
+		const line_25 = this.add.image(1625, 223, "notSelectedLine");
 		line_25.name = "line_25";
-		line_25.scaleY = 1.18;
+		line_25.scaleY = 1.2;
 		line_25.setOrigin(0.5, 0);
 		container_lines.add(line_25);
 
 		// line_26
-		const line_26 = this.add.image(1540, 308, "notSelectedLine");
+		const line_26 = this.add.image(1537, 308, "notSelectedLine");
 		line_26.name = "line_26";
-		line_26.scaleY = 1.22;
+		line_26.scaleY = 1.24;
 		line_26.angle = 90;
 		line_26.setOrigin(0.5, 1);
 		container_lines.add(line_26);
 
 		// line_27
-		const line_27 = this.add.image(1703, 225, "notSelectedLine");
+		const line_27 = this.add.image(1705, 223, "notSelectedLine");
 		line_27.name = "line_27";
-		line_27.scaleY = 1.18;
+		line_27.scaleY = 1.2;
 		line_27.setOrigin(0.5, 0);
 		container_lines.add(line_27);
 
 		// line_28
-		const line_28 = this.add.image(1624, 308, "notSelectedLine");
+		const line_28 = this.add.image(1623, 308, "notSelectedLine");
 		line_28.name = "line_28";
-		line_28.scaleY = 1.12;
+		line_28.scaleY = 1.16;
 		line_28.angle = 90;
 		line_28.setOrigin(0.5, 1);
 		container_lines.add(line_28);
 
 		// line_29
-		const line_29 = this.add.image(1785, 225, "notSelectedLine");
+		const line_29 = this.add.image(1788, 223, "notSelectedLine");
 		line_29.name = "line_29";
-		line_29.scaleY = 1.18;
+		line_29.scaleY = 1.2;
 		line_29.setOrigin(0.5, 0);
 		container_lines.add(line_29);
 
 		// line_30
-		const line_30 = this.add.image(1701, 308, "notSelectedLine");
+		const line_30 = this.add.image(1703, 308, "notSelectedLine");
 		line_30.name = "line_30";
-		line_30.scaleY = 1.19;
+		line_30.scaleY = 1.21;
 		line_30.angle = 90;
 		line_30.setOrigin(0.5, 1);
 		container_lines.add(line_30);
 
 		// line_31
-		const line_31 = this.add.image(1783, 228, "SelectedLine");
+		const line_31 = this.add.image(1786, 225, "SelectedLine");
 		line_31.name = "line_31";
-		line_31.scaleY = 1.22;
+		line_31.scaleY = 1.26;
 		line_31.angle = 90;
 		line_31.setOrigin(0.5, 1);
 		container_lines.add(line_31);
 
 		// line_32
-		const line_32 = this.add.image(1868, 227, "SelectedLine");
+		const line_32 = this.add.image(1874, 223, "SelectedLine");
 		line_32.name = "line_32";
 		line_32.scaleY = 1.18;
 		line_32.setOrigin(0.5, 0);
 		container_lines.add(line_32);
 
 		// line_33
-		const line_33 = this.add.image(1783, 307, "notSelectedLine");
+		const line_33 = this.add.image(1786, 308, "notSelectedLine");
 		line_33.name = "line_33";
-		line_33.scaleY = 1.22;
+		line_33.scaleY = 1.23;
 		line_33.angle = 90;
 		line_33.setOrigin(0.5, 1);
 		container_lines.add(line_33);
 
 		// line_34
-		const line_34 = this.add.image(1384, 306, "SelectedLine");
+		const line_34 = this.add.image(1376, 305, "SelectedLine");
 		line_34.name = "line_34";
-		line_34.scaleY = 1.18;
+		line_34.scaleY = 1.23;
 		line_34.setOrigin(0.5, 0);
 		container_lines.add(line_34);
 
 		// line_35
-		const line_35 = this.add.image(1463, 306, "notSelectedLine");
+		const line_35 = this.add.image(1458, 306, "notSelectedLine");
 		line_35.name = "line_35";
-		line_35.scaleY = 1.18;
+		line_35.scaleY = 1.2;
 		line_35.setOrigin(0.5, 0);
 		container_lines.add(line_35);
 
 		// line_36
-		const line_36 = this.add.image(1381, 390, "SelectedLine");
+		const line_36 = this.add.image(1373, 391, "SelectedLine");
 		line_36.name = "line_36";
-		line_36.scaleY = 1.162;
+		line_36.scaleY = 1.21;
 		line_36.angle = 90;
 		line_36.setOrigin(0.5, 1);
 		container_lines.add(line_36);
 
 		// line_37
-		const line_37 = this.add.image(1542, 307, "notSelectedLine");
+		const line_37 = this.add.image(1539, 306, "notSelectedLine");
 		line_37.name = "line_37";
-		line_37.scaleY = 1.18;
+		line_37.scaleY = 1.2;
 		line_37.setOrigin(0.5, 0);
 		container_lines.add(line_37);
 
 		// line_38
-		const line_38 = this.add.image(1461, 388, "notSelectedLine");
+		const line_38 = this.add.image(1456, 391, "notSelectedLine");
 		line_38.name = "line_38";
-		line_38.scaleY = 1.15;
+		line_38.scaleY = 1.16;
 		line_38.angle = 90;
 		line_38.setOrigin(0.5, 1);
 		container_lines.add(line_38);
 
 		// line_39
-		const line_39 = this.add.image(1626, 306, "notSelectedLine");
+		const line_39 = this.add.image(1625, 306, "notSelectedLine");
 		line_39.name = "line_39";
-		line_39.scaleY = 1.18;
+		line_39.scaleY = 1.2;
 		line_39.setOrigin(0.5, 0);
 		container_lines.add(line_39);
 
 		// line_40
-		const line_40 = this.add.image(1540, 389, "notSelectedLine");
+		const line_40 = this.add.image(1537, 391, "notSelectedLine");
 		line_40.name = "line_40";
-		line_40.scaleY = 1.221;
+		line_40.scaleY = 1.24;
 		line_40.angle = 90;
 		line_40.setOrigin(0.5, 1);
 		container_lines.add(line_40);
 
 		// line_41
-		const line_41 = this.add.image(1703, 306, "notSelectedLine");
+		const line_41 = this.add.image(1705, 306, "notSelectedLine");
 		line_41.name = "line_41";
-		line_41.scaleY = 1.18;
+		line_41.scaleY = 1.2;
 		line_41.setOrigin(0.5, 0);
 		container_lines.add(line_41);
 
 		// line_42
-		const line_42 = this.add.image(1624, 389, "notSelectedLine");
+		const line_42 = this.add.image(1623, 391, "notSelectedLine");
 		line_42.name = "line_42";
-		line_42.scaleY = 1.123;
+		line_42.scaleY = 1.16;
 		line_42.angle = 90;
 		line_42.setOrigin(0.5, 1);
 		container_lines.add(line_42);
 
 		// line_43
-		const line_43 = this.add.image(1785, 306, "notSelectedLine");
+		const line_43 = this.add.image(1788, 306, "notSelectedLine");
 		line_43.name = "line_43";
-		line_43.scaleY = 1.18;
+		line_43.scaleY = 1.2;
 		line_43.setOrigin(0.5, 0);
 		container_lines.add(line_43);
 
 		// line_44
-		const line_44 = this.add.image(1701, 389, "notSelectedLine");
+		const line_44 = this.add.image(1703, 391, "notSelectedLine");
 		line_44.name = "line_44";
-		line_44.scaleY = 1.197;
+		line_44.scaleY = 1.21;
 		line_44.angle = 90;
 		line_44.setOrigin(0.5, 1);
 		container_lines.add(line_44);
 
 		// line_45
-		const line_45 = this.add.image(1868, 306, "SelectedLine");
+		const line_45 = this.add.image(1874, 305, "SelectedLine");
 		line_45.name = "line_45";
 		line_45.scaleY = 1.18;
 		line_45.setOrigin(0.5, 0);
 		container_lines.add(line_45);
 
 		// line_46
-		const line_46 = this.add.image(1783, 389, "SelectedLine");
+		const line_46 = this.add.image(1786, 392, "SelectedLine");
 		line_46.name = "line_46";
 		line_46.scaleY = 1.221;
 		line_46.angle = 90;
@@ -599,51 +600,51 @@ class Level extends Phaser.Scene {
 		container_lines.add(line_46);
 
 		// line_47
-		const line_47 = this.add.image(1463, 386, "SelectedLine");
+		const line_47 = this.add.image(1458, 387, "SelectedLine");
 		line_47.name = "line_47";
 		line_47.scaleY = 1.19;
 		line_47.setOrigin(0.5, 0);
 		container_lines.add(line_47);
 
 		// line_48
-		const line_48 = this.add.image(1542, 387, "notSelectedLine");
+		const line_48 = this.add.image(1539, 393, "notSelectedLine");
 		line_48.name = "line_48";
 		line_48.scaleY = 1.18;
 		line_48.setOrigin(0.5, 0);
 		container_lines.add(line_48);
 
 		// line_49
-		const line_49 = this.add.image(1460, 469, "SelectedLine");
+		const line_49 = this.add.image(1455, 475, "SelectedLine");
 		line_49.name = "line_49";
-		line_49.scaleY = 1.16;
+		line_49.scaleY = 1.23;
 		line_49.angle = 90;
 		line_49.setOrigin(0.5, 1);
 		container_lines.add(line_49);
 
 		// line_50
-		const line_50 = this.add.image(1626, 387, "notSelectedLine");
+		const line_50 = this.add.image(1625, 389, "notSelectedLine");
 		line_50.name = "line_50";
-		line_50.scaleY = 1.18;
+		line_50.scaleY = 1.2;
 		line_50.setOrigin(0.5, 0);
 		container_lines.add(line_50);
 
 		// line_51
-		const line_51 = this.add.image(1540, 469, "notSelectedLine");
+		const line_51 = this.add.image(1537, 475, "notSelectedLine");
 		line_51.name = "line_51";
-		line_51.scaleY = 1.22;
+		line_51.scaleY = 1.25;
 		line_51.angle = 90;
 		line_51.setOrigin(0.5, 1);
 		container_lines.add(line_51);
 
 		// line_52
-		const line_52 = this.add.image(1703, 387, "notSelectedLine");
+		const line_52 = this.add.image(1705, 389, "notSelectedLine");
 		line_52.name = "line_52";
-		line_52.scaleY = 1.18;
+		line_52.scaleY = 1.2;
 		line_52.setOrigin(0.5, 0);
 		container_lines.add(line_52);
 
 		// line_53
-		const line_53 = this.add.image(1624, 469, "notSelectedLine");
+		const line_53 = this.add.image(1624, 475, "notSelectedLine");
 		line_53.name = "line_53";
 		line_53.scaleY = 1.13;
 		line_53.angle = 90;
@@ -651,14 +652,14 @@ class Level extends Phaser.Scene {
 		container_lines.add(line_53);
 
 		// line_54
-		const line_54 = this.add.image(1786, 386, "SelectedLine");
+		const line_54 = this.add.image(1788, 389, "SelectedLine");
 		line_54.name = "line_54";
 		line_54.scaleY = 1.18;
 		line_54.setOrigin(0.5, 0);
 		container_lines.add(line_54);
 
 		// line_55
-		const line_55 = this.add.image(1701, 470, "SelectedLine");
+		const line_55 = this.add.image(1701, 474, "SelectedLine");
 		line_55.name = "line_55";
 		line_55.scaleY = 1.2;
 		line_55.angle = 90;
@@ -666,36 +667,36 @@ class Level extends Phaser.Scene {
 		container_lines.add(line_55);
 
 		// line_56
-		const line_56 = this.add.image(1542, 467, "SelectedLine");
+		const line_56 = this.add.image(1540, 472, "SelectedLine");
 		line_56.name = "line_56";
-		line_56.scaleY = 1.18;
+		line_56.scaleY = 1.22;
 		line_56.setOrigin(0.5, 0);
 		container_lines.add(line_56);
 
 		// line_57
-		const line_57 = this.add.image(1626, 467, "notSelectedLine");
+		const line_57 = this.add.image(1625, 477, "notSelectedLine");
 		line_57.name = "line_57";
-		line_57.scaleY = 1.18;
+		line_57.scaleY = 1.15;
 		line_57.setOrigin(0.5, 0);
 		container_lines.add(line_57);
 
 		// line_58
-		const line_58 = this.add.image(1540, 551, "SelectedLine");
+		const line_58 = this.add.image(1537, 558, "SelectedLine");
 		line_58.name = "line_58";
-		line_58.scaleY = 1.23;
+		line_58.scaleY = 1.25;
 		line_58.angle = 90;
 		line_58.setOrigin(0.5, 1);
 		container_lines.add(line_58);
 
 		// line_59
-		const line_59 = this.add.image(1702, 467, "SelectedLine");
+		const line_59 = this.add.image(1705, 471, "SelectedLine");
 		line_59.name = "line_59";
-		line_59.scaleY = 1.18;
+		line_59.scaleY = 1.25;
 		line_59.setOrigin(0.5, 0);
 		container_lines.add(line_59);
 
 		// line_60
-		const line_60 = this.add.image(1624, 552, "SelectedLine");
+		const line_60 = this.add.image(1624, 558, "SelectedLine");
 		line_60.name = "line_60";
 		line_60.scaleY = 1.14;
 		line_60.angle = 90;
@@ -888,13 +889,15 @@ class Level extends Phaser.Scene {
 
 		// player_1_image
 		const player_1_image = this.add.image(497, 443, "avatar_1");
-		player_1_image.scaleX = 1.3;
-		player_1_image.scaleY = 1.3;
+		player_1_image.scaleX = 0.3;
+		player_1_image.scaleY = 0.3;
+		body.add(player_1_image);
 
 		// player_2_image
 		const player_2_image = this.add.image(1505, 610, "avatar_2");
-		player_2_image.scaleX = 1.3;
-		player_2_image.scaleY = 1.3;
+		player_2_image.scaleX = 0.3;
+		player_2_image.scaleY = 0.3;
+		body.add(player_2_image);
 
 		this.container_boxs = container_boxs;
 		this.container_lines = container_lines;
@@ -982,11 +985,13 @@ class Level extends Phaser.Scene {
 	/* START-USER-CODE */
 
 	// Write more your code here
+	init(mode) {
+		this.mode = mode;
+	}
 
 	create() {
 
 		this.editorCreate();
-
 		this.oGameManager = new GameManager(this);
 		this.oTweenManager = new TweenManager(this);
 		this.oGameManager.setTimer(15);
@@ -994,22 +999,56 @@ class Level extends Phaser.Scene {
 		this.setting.setInteractive().on("pointerdown", () => {
 			this.oTweenManager.settingAnimation();
 		});
-		this.container_lines.list.forEach((line) => {
+		this.container_lines.list.forEach((line, index) => {
 			if (line.texture.key == "SelectedLine") {
 				line.name = 'selected';
 				this.oGameManager.boxs();
 				line.disableInteractive();
 			}
 			else {
+				aNotSelectedLines.push(line);
 				line.setInteractive().on('pointerdown', () => {
 					line.name = 'selected';
 					line.setTexture("SelectedLine");
 					this.oGameManager.boxs();
 					this.oGameManager.turnHandler();
 					line.disableInteractive();
+					for (let i = 0; i < aNotSelectedLines.length; i++) {
+						if (aNotSelectedLines[i] == line) {
+							aNotSelectedLines.splice(i, 1);
+						}
+						break;
+					}
 				});
 			}
 		});
+
+	}
+	botTurn() {
+		this.container_lines.list.forEach((line) => {
+			line.disableInteractive();
+		})
+		let nRandomLine = Math.floor(Math.random() * aNotSelectedLines.length);
+		if (aNotSelectedLines[nRandomLine].texture.key == "notSelectedLine") {
+			setTimeout(() => {
+				console.log("botTurn");
+				aNotSelectedLines[nRandomLine].name = 'selected';
+				aNotSelectedLines[nRandomLine].setTexture("SelectedLine");
+				this.oGameManager.boxs();
+				this.oGameManager.turnHandler();
+				aNotSelectedLines[nRandomLine].disableInteractive();
+				aNotSelectedLines.splice(nRandomLine, 1);
+				this.container_lines.list.forEach((line) => {
+					if (line.texture.key == "notSelectedLine") {
+						line.setInteractive();
+					}
+				});
+			}, 3000);
+			return;
+		}
+		else {
+			this.botTurn();
+		}
 	}
 	/* END-USER-CODE */
 }

@@ -9,7 +9,6 @@ class TweenManager {
             ease: "power2",
             duration: 800,
             yoyo: true,
-            // repeat: -1,
             onComplete: () => {
                 this.oScene.add.tween({
                     targets: this.oScene.logoPrefab.avatar_2,
@@ -17,10 +16,26 @@ class TweenManager {
                     ease: "power2",
                     duration: 800,
                     yoyo: true,
-                    // repeat: -1,
                 });
             }
         })
+    }
+    buttonAnimation(target) {
+        this.oScene.add.tween({
+            targets: target,
+            scaleX: 0.8,
+            scaleY: 0.8,
+            ease: "power2",
+            duration: 200,
+            yoyo: true,
+            onComplete: () => {
+                let isBot;
+                target.name = "container_mode_2"? isBot = true: isBot = false;
+                
+                this.oScene.scene.stop("Home");
+                this.oScene.scene.start("Level", {isBot});
+            }
+        });
     }
     settingAnimation() {
         if (this.oScene.setting_bar.scaleX == 1) {
@@ -62,15 +77,15 @@ class TweenManager {
         let target;
         userTurn ? target = this.oScene.player_1_image : target = this.oScene.player_2_image;
         if (this.userTurnTween) {
-            this.oScene.player_1_image.setScale(1.3, 1.3);
-            this.oScene.player_2_image.setScale(1.3, 1.3);
+            this.oScene.player_1_image.setScale(0.3, 0.3);
+            this.oScene.player_2_image.setScale(0.3, 0.3);
             this.userTurnTween.stop();
         }
         this.userTurnTween = this.oScene.add.tween({
             targets: target,
-            scaleX: +1.5,
-            scaleY: +1.5,
-            ease: "power2",
+            scaleX: +0.35,
+            scaleY: +0.35,
+            ease: "power4",
             duration: 700,
             yoyo: true,
             repeat: -1
@@ -82,7 +97,7 @@ class TweenManager {
             scale = 1;
         }
         else {
-            scale = 3;
+            scale = 0.9;
         }
         this.oScene.add.tween({
             targets: target,

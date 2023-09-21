@@ -199,7 +199,7 @@ class GameManager {
             line.disableInteractive();
         });
         clearInterval(this.timerInterval);
-        winner_image = this.oScene.add.image(960, 540, sWinnerName).setScale(5);
+        winner_image = this.oScene.add.image(960, 540, sWinnerName).setScale(3, 3);
         aCompletedBox.splice(0, aCompletedBox.length);
         this.oScene.oTweenManager.winnerImageAnimation(winner_image);
     }
@@ -296,7 +296,7 @@ class GameManager {
                     userTurn ? nPlayer_1Score++ : nPlayer_2Score++;
                     this.oScene.player_1Score.setText(nPlayer_1Score);
                     this.oScene.player_2Score.setText(nPlayer_2Score);
-                    const sign = this.oScene.add.image(this.oScene.container_boxs.list[index].x, this.oScene.container_boxs.list[index].y, sSignName).setScale(0.5);
+                    const sign = this.oScene.add.image(this.oScene.container_boxs.list[index].x, this.oScene.container_boxs.list[index].y, sSignName).setScale(0.1);
                     repeatTurn = true;
                 }
             }
@@ -307,5 +307,8 @@ class GameManager {
         }
         clearInterval(this.timerInterval);
         this.setTimer(15);
+        if (this.oScene.mode.isBot && !userTurn) {
+            this.oScene.botTurn();
+        }
     }
 }

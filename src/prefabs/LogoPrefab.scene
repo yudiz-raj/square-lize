@@ -13,7 +13,6 @@
             "type": "Container",
             "id": "efa99f17-0985-459b-ae53-596ccb52fa98",
             "label": "container_1",
-            "x": -357,
             "list": [
                 {
                     "type": "Image",
@@ -21,8 +20,7 @@
                     "label": "squareQuadz",
                     "texture": {
                         "key": "squareQuadz"
-                    },
-                    "x": 357
+                    }
                 },
                 {
                     "type": "Image",
@@ -32,10 +30,10 @@
                     "texture": {
                         "key": "avatar_1"
                     },
-                    "x": 95.9012451171875,
-                    "y": 51.564456939697266,
-                    "scaleX": 1.2,
-                    "scaleY": 1.2,
+                    "x": -273,
+                    "y": 49,
+                    "scaleX": 0.3,
+                    "scaleY": 0.3,
                     "angle": -20,
                     "originX": 1,
                     "originY": 0
@@ -48,10 +46,10 @@
                     "texture": {
                         "key": "avatar_2"
                     },
-                    "x": 150,
-                    "y": 69.5999984741211,
-                    "scaleX": 1.1,
-                    "scaleY": 1.1,
+                    "x": -219,
+                    "y": 67,
+                    "scaleX": 0.3,
+                    "scaleY": 0.3,
                     "originY": 0
                 }
             ]

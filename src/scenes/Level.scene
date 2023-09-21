@@ -394,9 +394,9 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1541,
-                            "y": 63,
-                            "scaleY": 1.21,
+                            "x": 1539,
+                            "y": 55,
+                            "scaleY": 1.25,
                             "angle": -180,
                             "originY": 1
                         },
@@ -408,9 +408,9 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1539,
-                            "y": 67,
-                            "scaleY": 1.24,
+                            "x": 1536,
+                            "y": 58,
+                            "scaleY": 1.26,
                             "angle": -90,
                             "originY": 0
                         },
@@ -422,9 +422,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1626,
-                            "y": 64,
-                            "scaleY": 1.193,
+                            "x": 1625,
+                            "y": 56,
+                            "scaleY": 1.22,
                             "originY": 0
                         },
                         {
@@ -435,9 +435,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1539,
-                            "y": 146,
-                            "scaleY": 1.24,
+                            "x": 1536,
+                            "y": 142,
+                            "scaleY": 1.26,
                             "angle": -90,
                             "originY": 0
                         },
@@ -449,9 +449,9 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1624,
-                            "y": 65,
-                            "scaleY": 1.139,
+                            "x": 1622,
+                            "y": 58,
+                            "scaleY": 1.18,
                             "angle": -90,
                             "originY": 0
                         },
@@ -463,9 +463,9 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1703,
-                            "y": 63,
-                            "scaleY": 1.208,
+                            "x": 1705,
+                            "y": 55,
+                            "scaleY": 1.24,
                             "originY": 0
                         },
                         {
@@ -476,9 +476,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1624,
-                            "y": 147,
-                            "scaleY": 1.14,
+                            "x": 1623,
+                            "y": 142,
+                            "scaleY": 1.16,
                             "angle": -90,
                             "originY": 0
                         },
@@ -490,9 +490,9 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1464,
-                            "y": 144,
-                            "scaleY": 1.19,
+                            "x": 1458,
+                            "y": 139,
+                            "scaleY": 1.23,
                             "angle": -180,
                             "originY": 1
                         },
@@ -504,9 +504,9 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1461,
-                            "y": 146,
-                            "scaleY": 1.15,
+                            "x": 1455,
+                            "y": 142,
+                            "scaleY": 1.22,
                             "angle": -90,
                             "originY": 0
                         },
@@ -518,9 +518,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1542,
-                            "y": 142,
-                            "scaleY": 1.18,
+                            "x": 1539,
+                            "y": 145,
+                            "scaleY": 1.15,
                             "originY": 0
                         },
                         {
@@ -531,8 +531,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1460,
-                            "y": 227,
+                            "x": 1455,
+                            "y": 225,
                             "scaleY": 1.16,
                             "angle": 90,
                             "originY": 1
@@ -545,8 +545,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1626,
-                            "y": 144,
+                            "x": 1625,
+                            "y": 140,
                             "scaleY": 1.18,
                             "angle": -180,
                             "originY": 1
@@ -559,8 +559,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1540,
-                            "y": 227,
+                            "x": 1537,
+                            "y": 225,
                             "scaleY": 1.22,
                             "angle": 90,
                             "originY": 1
@@ -573,8 +573,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1703,
-                            "y": 144,
+                            "x": 1705,
+                            "y": 140,
                             "scaleY": 1.18,
                             "originY": 0
                         },
@@ -586,9 +586,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1624,
-                            "y": 227,
-                            "scaleY": 1.12,
+                            "x": 1623,
+                            "y": 225,
+                            "scaleY": 1.16,
                             "angle": 90,
                             "originY": 1
                         },
@@ -600,9 +600,9 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1701,
-                            "y": 147,
-                            "scaleY": 1.209,
+                            "x": 1702,
+                            "y": 142,
+                            "scaleY": 1.24,
                             "angle": -90,
                             "originY": 0
                         },
@@ -614,8 +614,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1786,
-                            "y": 144,
+                            "x": 1789,
+                            "y": 139,
                             "scaleY": 1.18,
                             "originY": 0
                         },
@@ -627,9 +627,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1701,
-                            "y": 226,
-                            "scaleY": 1.19,
+                            "x": 1703,
+                            "y": 225,
+                            "scaleY": 1.24,
                             "angle": 90,
                             "originY": 1
                         },
@@ -641,9 +641,9 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1384,
-                            "y": 225,
-                            "scaleY": 1.18,
+                            "x": 1376,
+                            "y": 222,
+                            "scaleY": 1.23,
                             "originY": 0
                         },
                         {
@@ -654,9 +654,9 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1381,
-                            "y": 229,
-                            "scaleY": 1.17,
+                            "x": 1373,
+                            "y": 225,
+                            "scaleY": 1.23,
                             "angle": 90,
                             "originY": 1
                         },
@@ -668,9 +668,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1463,
-                            "y": 225,
-                            "scaleY": 1.18,
+                            "x": 1458,
+                            "y": 227,
+                            "scaleY": 1.14,
                             "originY": 0
                         },
                         {
@@ -681,9 +681,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1381,
+                            "x": 1373,
                             "y": 308,
-                            "scaleY": 1.16,
+                            "scaleY": 1.21,
                             "angle": 90,
                             "originY": 1
                         },
@@ -695,9 +695,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1542,
-                            "y": 225,
-                            "scaleY": 1.18,
+                            "x": 1539,
+                            "y": 223,
+                            "scaleY": 1.2,
                             "originY": 0
                         },
                         {
@@ -708,7 +708,7 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1461,
+                            "x": 1456,
                             "y": 308,
                             "scaleY": 1.16,
                             "angle": 90,
@@ -722,9 +722,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1626,
-                            "y": 225,
-                            "scaleY": 1.18,
+                            "x": 1625,
+                            "y": 223,
+                            "scaleY": 1.2,
                             "originY": 0
                         },
                         {
@@ -735,9 +735,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1540,
+                            "x": 1537,
                             "y": 308,
-                            "scaleY": 1.22,
+                            "scaleY": 1.24,
                             "angle": 90,
                             "originY": 1
                         },
@@ -749,9 +749,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1703,
-                            "y": 225,
-                            "scaleY": 1.18,
+                            "x": 1705,
+                            "y": 223,
+                            "scaleY": 1.2,
                             "originY": 0
                         },
                         {
@@ -762,9 +762,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1624,
+                            "x": 1623,
                             "y": 308,
-                            "scaleY": 1.12,
+                            "scaleY": 1.16,
                             "angle": 90,
                             "originY": 1
                         },
@@ -776,9 +776,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1785,
-                            "y": 225,
-                            "scaleY": 1.18,
+                            "x": 1788,
+                            "y": 223,
+                            "scaleY": 1.2,
                             "originY": 0
                         },
                         {
@@ -789,9 +789,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1701,
+                            "x": 1703,
                             "y": 308,
-                            "scaleY": 1.19,
+                            "scaleY": 1.21,
                             "angle": 90,
                             "originY": 1
                         },
@@ -803,9 +803,9 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1783,
-                            "y": 228,
-                            "scaleY": 1.22,
+                            "x": 1786,
+                            "y": 225,
+                            "scaleY": 1.26,
                             "angle": 90,
                             "originY": 1
                         },
@@ -817,8 +817,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1868,
-                            "y": 227,
+                            "x": 1874,
+                            "y": 223,
                             "scaleY": 1.18,
                             "originY": 0
                         },
@@ -830,9 +830,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1783,
-                            "y": 307,
-                            "scaleY": 1.22,
+                            "x": 1786,
+                            "y": 308,
+                            "scaleY": 1.23,
                             "angle": 90,
                             "originY": 1
                         },
@@ -844,9 +844,9 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1384,
-                            "y": 306,
-                            "scaleY": 1.18,
+                            "x": 1376,
+                            "y": 305,
+                            "scaleY": 1.23,
                             "originY": 0
                         },
                         {
@@ -857,9 +857,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1463,
+                            "x": 1458,
                             "y": 306,
-                            "scaleY": 1.18,
+                            "scaleY": 1.2,
                             "originY": 0
                         },
                         {
@@ -870,9 +870,9 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1381,
-                            "y": 390,
-                            "scaleY": 1.162,
+                            "x": 1373,
+                            "y": 391,
+                            "scaleY": 1.21,
                             "angle": 90,
                             "originY": 1
                         },
@@ -884,9 +884,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1542,
-                            "y": 307,
-                            "scaleY": 1.18,
+                            "x": 1539,
+                            "y": 306,
+                            "scaleY": 1.2,
                             "originY": 0
                         },
                         {
@@ -897,9 +897,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1461,
-                            "y": 388,
-                            "scaleY": 1.15,
+                            "x": 1456,
+                            "y": 391,
+                            "scaleY": 1.16,
                             "angle": 90,
                             "originY": 1
                         },
@@ -911,9 +911,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1626,
+                            "x": 1625,
                             "y": 306,
-                            "scaleY": 1.18,
+                            "scaleY": 1.2,
                             "originY": 0
                         },
                         {
@@ -924,9 +924,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1540,
-                            "y": 389,
-                            "scaleY": 1.221,
+                            "x": 1537,
+                            "y": 391,
+                            "scaleY": 1.24,
                             "angle": 90,
                             "originY": 1
                         },
@@ -938,9 +938,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1703,
+                            "x": 1705,
                             "y": 306,
-                            "scaleY": 1.18,
+                            "scaleY": 1.2,
                             "originY": 0
                         },
                         {
@@ -951,9 +951,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1624,
-                            "y": 389,
-                            "scaleY": 1.123,
+                            "x": 1623,
+                            "y": 391,
+                            "scaleY": 1.16,
                             "angle": 90,
                             "originY": 1
                         },
@@ -965,9 +965,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1785,
+                            "x": 1788,
                             "y": 306,
-                            "scaleY": 1.18,
+                            "scaleY": 1.2,
                             "originY": 0
                         },
                         {
@@ -978,9 +978,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1701,
-                            "y": 389,
-                            "scaleY": 1.197,
+                            "x": 1703,
+                            "y": 391,
+                            "scaleY": 1.21,
                             "angle": 90,
                             "originY": 1
                         },
@@ -992,8 +992,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1868,
-                            "y": 306,
+                            "x": 1874,
+                            "y": 305,
                             "scaleY": 1.18,
                             "originY": 0
                         },
@@ -1005,8 +1005,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1783,
-                            "y": 389,
+                            "x": 1786,
+                            "y": 392,
                             "scaleY": 1.221,
                             "angle": 90,
                             "originY": 1
@@ -1019,8 +1019,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1463,
-                            "y": 386,
+                            "x": 1458,
+                            "y": 387,
                             "scaleY": 1.19,
                             "originY": 0
                         },
@@ -1032,8 +1032,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1542,
-                            "y": 387,
+                            "x": 1539,
+                            "y": 393,
                             "scaleY": 1.18,
                             "originY": 0
                         },
@@ -1045,9 +1045,9 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1460,
-                            "y": 469,
-                            "scaleY": 1.16,
+                            "x": 1455,
+                            "y": 475,
+                            "scaleY": 1.23,
                             "angle": 90,
                             "originY": 1
                         },
@@ -1059,9 +1059,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1626,
-                            "y": 387,
-                            "scaleY": 1.18,
+                            "x": 1625,
+                            "y": 389,
+                            "scaleY": 1.2,
                             "originY": 0
                         },
                         {
@@ -1072,9 +1072,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1540,
-                            "y": 469,
-                            "scaleY": 1.22,
+                            "x": 1537,
+                            "y": 475,
+                            "scaleY": 1.25,
                             "angle": 90,
                             "originY": 1
                         },
@@ -1086,9 +1086,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1703,
-                            "y": 387,
-                            "scaleY": 1.18,
+                            "x": 1705,
+                            "y": 389,
+                            "scaleY": 1.2,
                             "originY": 0
                         },
                         {
@@ -1100,7 +1100,7 @@
                                 "key": "notSelectedLine"
                             },
                             "x": 1624,
-                            "y": 469,
+                            "y": 475,
                             "scaleY": 1.13,
                             "angle": 90,
                             "originY": 1
@@ -1113,8 +1113,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1786,
-                            "y": 386,
+                            "x": 1788,
+                            "y": 389,
                             "scaleY": 1.18,
                             "originY": 0
                         },
@@ -1127,7 +1127,7 @@
                                 "key": "SelectedLine"
                             },
                             "x": 1701,
-                            "y": 470,
+                            "y": 474,
                             "scaleY": 1.2,
                             "angle": 90,
                             "originY": 1
@@ -1140,9 +1140,9 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1542,
-                            "y": 467,
-                            "scaleY": 1.18,
+                            "x": 1540,
+                            "y": 472,
+                            "scaleY": 1.22,
                             "originY": 0
                         },
                         {
@@ -1153,9 +1153,9 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1626,
-                            "y": 467,
-                            "scaleY": 1.18,
+                            "x": 1625,
+                            "y": 477,
+                            "scaleY": 1.15,
                             "originY": 0
                         },
                         {
@@ -1166,9 +1166,9 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1540,
-                            "y": 551,
-                            "scaleY": 1.23,
+                            "x": 1537,
+                            "y": 558,
+                            "scaleY": 1.25,
                             "angle": 90,
                             "originY": 1
                         },
@@ -1180,9 +1180,9 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1702,
-                            "y": 467,
-                            "scaleY": 1.18,
+                            "x": 1705,
+                            "y": 471,
+                            "scaleY": 1.25,
                             "originY": 0
                         },
                         {
@@ -1194,7 +1194,7 @@
                                 "key": "SelectedLine"
                             },
                             "x": 1624,
-                            "y": 552,
+                            "y": 558,
                             "scaleY": 1.14,
                             "angle": 90,
                             "originY": 1
@@ -1545,34 +1545,34 @@
                     "y": -63,
                     "scaleX": 0.8,
                     "scaleY": 0.8
+                },
+                {
+                    "type": "Image",
+                    "id": "671ab069-fb1e-403b-9f92-e59fca18ead1",
+                    "label": "player_1_image",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "avatar_1"
+                    },
+                    "x": 497,
+                    "y": 443,
+                    "scaleX": 0.3,
+                    "scaleY": 0.3
+                },
+                {
+                    "type": "Image",
+                    "id": "de4fc6e4-fe75-472c-bad9-f078a1b13155",
+                    "label": "player_2_image",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "avatar_2"
+                    },
+                    "x": 1505,
+                    "y": 610,
+                    "scaleX": 0.3,
+                    "scaleY": 0.3
                 }
             ]
-        },
-        {
-            "type": "Image",
-            "id": "671ab069-fb1e-403b-9f92-e59fca18ead1",
-            "label": "player_1_image",
-            "scope": "CLASS",
-            "texture": {
-                "key": "avatar_1"
-            },
-            "x": 497,
-            "y": 443,
-            "scaleX": 1.3,
-            "scaleY": 1.3
-        },
-        {
-            "type": "Image",
-            "id": "de4fc6e4-fe75-472c-bad9-f078a1b13155",
-            "label": "player_2_image",
-            "scope": "CLASS",
-            "texture": {
-                "key": "avatar_2"
-            },
-            "x": 1505,
-            "y": 610,
-            "scaleX": 1.3,
-            "scaleY": 1.3
         }
     ],
     "plainObjects": [],

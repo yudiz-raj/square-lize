@@ -30,7 +30,7 @@
         },
         {
             "type": "Image",
-            "id": "7427b806-be63-45c1-aa08-04cb29de6e79",
+            "id": "b7ea490f-3a87-4463-90f3-7de8866ea1da",
             "label": "background",
             "texture": {
                 "key": "background"
@@ -40,15 +40,96 @@
         },
         {
             "prefabId": "05171882-e5f4-4e95-bcc0-d1d580ce4d21",
-            "id": "9ee5547e-6f77-4501-b3ab-61187f049714",
+            "id": "726b6c0c-a5b5-4e06-ade8-a3513c8f1d3b",
             "unlock": [
                 "x",
                 "y"
             ],
             "label": "logoPrefab",
             "scope": "CLASS",
-            "x": 591,
-            "y": 497
+            "x": 959.999996185923,
+            "y": 539.9999994211958
+        },
+        {
+            "type": "Container",
+            "id": "919a2c4e-76e1-400c-bfce-13ed11c637fe",
+            "label": "container_loading",
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "097fed06-fc8e-42bc-b9e6-9188eb0a293e",
+                    "label": "loading_bar",
+                    "texture": {
+                        "key": "loading_bar"
+                    },
+                    "x": 960,
+                    "y": 887
+                },
+                {
+                    "type": "Image",
+                    "id": "d794cab6-ce15-43c0-96e6-dd3e8dcfed11",
+                    "label": "loading",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "loading"
+                    },
+                    "x": 479,
+                    "y": 887
+                },
+                {
+                    "type": "Text",
+                    "id": "02486b43-f194-45e4-ab57-c8753a367c6f",
+                    "label": "LoadingTxt",
+                    "scope": "CLASS",
+                    "x": 792,
+                    "y": 836,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "tintTopLeft": "#B59981",
+                    "tintTopRight": "#B59981",
+                    "tintBottomLeft": "#B59981",
+                    "tintBottomRight": "#B59981",
+                    "text": "Loading...",
+                    "align": "center",
+                    "fontFamily": "Washington",
+                    "fontSize": "42px"
+                },
+                {
+                    "type": "Text",
+                    "id": "7d3b26ff-9bfb-4e8e-b81e-ffa25f3edd27",
+                    "label": "percentageTxt",
+                    "scope": "CLASS",
+                    "x": 1129,
+                    "y": 836,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "tintTopLeft": "#B59981",
+                    "tintTopRight": "#B59981",
+                    "tintBottomLeft": "#B59981",
+                    "tintBottomRight": "#B59981",
+                    "text": "0",
+                    "align": "center",
+                    "fontFamily": "Washington",
+                    "fontSize": "48px"
+                },
+                {
+                    "type": "Text",
+                    "id": "c9948e5a-3652-488c-ae2f-3cb4fbc9aa7e",
+                    "label": "percentageTxt_1",
+                    "x": 1177,
+                    "y": 836,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "tintTopLeft": "#B59981",
+                    "tintTopRight": "#B59981",
+                    "tintBottomLeft": "#B59981",
+                    "tintBottomRight": "#B59981",
+                    "text": "%",
+                    "align": "center",
+                    "fontFamily": "Washington",
+                    "fontSize": "48px"
+                }
+            ]
         }
     ],
     "plainObjects": [],

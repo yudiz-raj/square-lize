@@ -25,95 +25,150 @@
                     "y": 540
                 },
                 {
-                    "prefabId": "05171882-e5f4-4e95-bcc0-d1d580ce4d21",
-                    "id": "01f2839e-0b1c-4d11-aaf0-4118941dd9dd",
-                    "unlock": [
-                        "x",
-                        "y"
-                    ],
-                    "label": "logoPrefab",
-                    "scope": "CLASS",
-                    "x": 591,
-                    "y": 497
-                },
-                {
                     "type": "Container",
-                    "id": "e134f9c6-ba36-40dd-9816-9745eb43d874",
-                    "label": "container_loading",
+                    "id": "74d83dac-93ad-428b-943f-672db6c932cd",
+                    "label": "container_mode_1",
+                    "useGameObjectName": true,
+                    "scope": "CLASS",
+                    "x": 606.8136467322677,
+                    "y": 481.493297246839,
                     "list": [
                         {
                             "type": "Image",
-                            "id": "7255148a-953b-4646-b6b2-7935c407bc20",
-                            "label": "loading_bar",
+                            "id": "d045cf28-1815-4d50-a8ad-1792d53d1b62",
+                            "label": "player_1",
                             "texture": {
-                                "key": "loading_bar"
+                                "key": "player_1"
                             },
-                            "x": 960,
-                            "y": 887
+                            "x": -30.813646632626956,
+                            "y": -37.49329760431965
                         },
                         {
                             "type": "Image",
-                            "id": "1990ec7b-a3c2-45e0-ae7e-05dd080d4130",
-                            "label": "loading",
-                            "scope": "CLASS",
+                            "id": "3c5f1d54-00e3-4047-8893-2d7a622ce6d7",
+                            "label": "player_1Icon",
                             "texture": {
-                                "key": "loading"
+                                "key": "player_1Icon"
                             },
-                            "x": 479,
-                            "y": 887
+                            "x": -76.81364663262696,
+                            "y": -27.49329760431965
+                        },
+                        {
+                            "type": "Image",
+                            "id": "9d4bdc6f-3e0a-485f-b1d0-adfb52c5aa17",
+                            "label": "player_1Icon_1",
+                            "texture": {
+                                "key": "player_1Icon"
+                            },
+                            "x": 103.18635336737304,
+                            "y": 109.50670239568035
                         },
                         {
                             "type": "Text",
-                            "id": "233a5823-3581-49b4-b6eb-682773d37eb6",
-                            "label": "LoadingTxt",
-                            "scope": "CLASS",
-                            "x": 792,
-                            "y": 836,
+                            "id": "971d6950-547a-40c8-82d9-c2dd8ef31c50",
+                            "label": "vsText_2",
+                            "x": 19.186353367373044,
+                            "y": 52.50670239568035,
                             "originX": 0.5,
                             "originY": 0.5,
-                            "tintTopLeft": "#B59981",
-                            "tintTopRight": "#B59981",
-                            "tintBottomLeft": "#B59981",
-                            "tintBottomRight": "#B59981",
-                            "text": "Loading...",
-                            "align": "center",
+                            "tintTopLeft": "#BA8400",
+                            "tintTopRight": "#BA8400",
+                            "tintBottomLeft": "#BA8400",
+                            "tintBottomRight": "#BA8400",
+                            "text": "VS",
                             "fontFamily": "Washington",
-                            "fontSize": "42px"
+                            "fontSize": "60px"
                         },
                         {
                             "type": "Text",
-                            "id": "0ddc29f6-7a50-4f2a-91cd-756418546c1b",
-                            "label": "percentageTxt",
-                            "scope": "CLASS",
-                            "x": 1129,
-                            "y": 836,
+                            "id": "b69a2f9a-3421-4ebc-90ad-9092be7117ee",
+                            "label": "mode_1",
+                            "x": 20.186353367373044,
+                            "y": -153.49329760431965,
+                            "angle": 5,
                             "originX": 0.5,
                             "originY": 0.5,
-                            "tintTopLeft": "#B59981",
-                            "tintTopRight": "#B59981",
-                            "tintBottomLeft": "#B59981",
-                            "tintBottomRight": "#B59981",
-                            "text": "0",
-                            "align": "center",
+                            "tintTopLeft": "#806800",
+                            "tintTopRight": "#806800",
+                            "tintBottomLeft": "#806800",
+                            "tintBottomRight": "#806800",
+                            "text": "Mode 1",
                             "fontFamily": "Washington",
-                            "fontSize": "48px"
+                            "fontSize": "60px"
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "647c926c-8d84-4b2d-9315-9cd04dcb0e97",
+                    "label": "container_mode_2",
+                    "useGameObjectName": true,
+                    "scope": "CLASS",
+                    "x": 1388.4390687249606,
+                    "y": 655.7598201923057,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "9edb034e-7293-4120-8a98-f9fea370ade3",
+                            "label": "player_2",
+                            "texture": {
+                                "key": "player_2"
+                            },
+                            "x": 29.56097712572023,
+                            "y": -42.759776471273995
+                        },
+                        {
+                            "type": "Image",
+                            "id": "53467c5d-bf6d-4595-95a9-61e6600e3350",
+                            "label": "player_2Icon",
+                            "texture": {
+                                "key": "player_2Icon"
+                            },
+                            "x": -103.43902287427977,
+                            "y": -21.759776471273995
+                        },
+                        {
+                            "type": "Image",
+                            "id": "19387d87-7822-4ab3-948d-31d0c06a336b",
+                            "label": "computer",
+                            "texture": {
+                                "key": "computer"
+                            },
+                            "x": 76.56097712572023,
+                            "y": 111.240223528726
                         },
                         {
                             "type": "Text",
-                            "id": "dfa34e00-d8e7-4530-9630-05e28bc19b23",
-                            "label": "percentageTxt_1",
-                            "x": 1177,
-                            "y": 836,
+                            "id": "e89ed4a9-f318-44bd-9f87-8565273c1777",
+                            "label": "vsText",
+                            "x": -7.439022874279772,
+                            "y": 37.240223528726005,
                             "originX": 0.5,
                             "originY": 0.5,
-                            "tintTopLeft": "#B59981",
-                            "tintTopRight": "#B59981",
-                            "tintBottomLeft": "#B59981",
-                            "tintBottomRight": "#B59981",
-                            "text": "%",
-                            "align": "center",
+                            "tintTopLeft": "#007EBA",
+                            "tintTopRight": "#007EBA",
+                            "tintBottomLeft": "#007EBA",
+                            "tintBottomRight": "#007EBA",
+                            "text": "VS",
                             "fontFamily": "Washington",
-                            "fontSize": "48px"
+                            "fontSize": "60px"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "60699409-144c-4cf0-a1cc-984ce5935466",
+                            "label": "mode_2",
+                            "x": -22.43902287427977,
+                            "y": -158.759776471274,
+                            "angle": -5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "tintTopLeft": "#005980",
+                            "tintTopRight": "#005980",
+                            "tintBottomLeft": "#005980",
+                            "tintBottomRight": "#005980",
+                            "text": "Mode 2",
+                            "fontFamily": "Washington",
+                            "fontSize": "60px"
                         }
                     ]
                 }
