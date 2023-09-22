@@ -13,6 +13,7 @@
             "type": "Container",
             "id": "87cd0dc8-3c8c-498a-9d69-fbff96e922c7",
             "label": "body",
+            "scope": "CLASS",
             "list": [
                 {
                     "type": "Image",
@@ -31,7 +32,7 @@
                     "texture": {
                         "key": "gameBoard"
                     },
-                    "x": 960,
+                    "x": 985,
                     "y": 540
                 },
                 {
@@ -45,7 +46,7 @@
                             "id": "64ec3c95-54a2-409a-a864-41b3a96c9a28",
                             "label": "box_1",
                             "useGameObjectName": true,
-                            "x": 918,
+                            "x": 941,
                             "y": 336,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -59,7 +60,7 @@
                             "id": "7c34ee6e-7a03-4ace-b3dc-206f31aa31f5",
                             "label": "box_2",
                             "useGameObjectName": true,
-                            "x": 1000,
+                            "x": 1023,
                             "y": 336,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -73,7 +74,7 @@
                             "id": "50f1c764-fdbe-4f5d-9e29-8355dd4b3dc0",
                             "label": "box_3",
                             "useGameObjectName": true,
-                            "x": 836,
+                            "x": 859,
                             "y": 416,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -87,7 +88,7 @@
                             "id": "912efd0f-b2a5-480c-b302-bdaac1123871",
                             "label": "box_4",
                             "useGameObjectName": true,
-                            "x": 918,
+                            "x": 941,
                             "y": 416,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -101,7 +102,7 @@
                             "id": "0f398255-a75c-4e68-a682-8db0830e9458",
                             "label": "box_5",
                             "useGameObjectName": true,
-                            "x": 1000,
+                            "x": 1023,
                             "y": 416,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -115,7 +116,7 @@
                             "id": "1968c0fe-292b-4dad-b3d8-612c0fb4b30c",
                             "label": "box_6",
                             "useGameObjectName": true,
-                            "x": 1079,
+                            "x": 1102,
                             "y": 416,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -129,7 +130,7 @@
                             "id": "088b6209-4af2-432c-b841-97fcdde07b30",
                             "label": "box_7",
                             "useGameObjectName": true,
-                            "x": 758,
+                            "x": 781,
                             "y": 496,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -143,7 +144,7 @@
                             "id": "8fb10240-578f-4a1e-89d7-a4ab5472c7f9",
                             "label": "box_8",
                             "useGameObjectName": true,
-                            "x": 836,
+                            "x": 859,
                             "y": 496,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -157,7 +158,7 @@
                             "id": "4b6284f6-53d4-4254-a2d7-62c1d43d6c2c",
                             "label": "box_9",
                             "useGameObjectName": true,
-                            "x": 918,
+                            "x": 941,
                             "y": 496,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -171,7 +172,7 @@
                             "id": "72df3a63-5b6f-41b9-a8dc-05035f0f7abf",
                             "label": "box_10",
                             "useGameObjectName": true,
-                            "x": 1000,
+                            "x": 1023,
                             "y": 496,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -185,7 +186,7 @@
                             "id": "83e87b1e-5e40-4229-bf14-3867ccc0cd6a",
                             "label": "box_11",
                             "useGameObjectName": true,
-                            "x": 1079,
+                            "x": 1102,
                             "y": 496,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -199,7 +200,7 @@
                             "id": "d6c9d3d7-6941-411b-8253-7f7e5d7f3dfc",
                             "label": "box_12",
                             "useGameObjectName": true,
-                            "x": 1160,
+                            "x": 1183,
                             "y": 496,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -213,7 +214,7 @@
                             "id": "ba4a6c1f-1584-4a86-a6d1-6481baa4578e",
                             "label": "box_13",
                             "useGameObjectName": true,
-                            "x": 758,
+                            "x": 781,
                             "y": 576,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -227,7 +228,7 @@
                             "id": "aa705b00-1766-4efa-8a82-097e24314f21",
                             "label": "box_14",
                             "useGameObjectName": true,
-                            "x": 836,
+                            "x": 859,
                             "y": 576,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -241,7 +242,7 @@
                             "id": "5f51fe6e-48a9-4fe8-866a-1d26f8eb0882",
                             "label": "box_15",
                             "useGameObjectName": true,
-                            "x": 918,
+                            "x": 941,
                             "y": 576,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -255,7 +256,7 @@
                             "id": "a25d903b-736c-4000-928b-edf16934d0d7",
                             "label": "box_16",
                             "useGameObjectName": true,
-                            "x": 1000,
+                            "x": 1023,
                             "y": 576,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -269,7 +270,7 @@
                             "id": "182c88d3-ce1f-4973-a86c-470f00fdd7e5",
                             "label": "box_17",
                             "useGameObjectName": true,
-                            "x": 1079,
+                            "x": 1102,
                             "y": 576,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -283,7 +284,7 @@
                             "id": "8347277b-f1e4-45c3-b562-3b20027bd4b8",
                             "label": "box_18",
                             "useGameObjectName": true,
-                            "x": 1160,
+                            "x": 1183,
                             "y": 576,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -297,7 +298,7 @@
                             "id": "1f67eabb-4008-4630-804b-da3470a56059",
                             "label": "box_19",
                             "useGameObjectName": true,
-                            "x": 836,
+                            "x": 859,
                             "y": 656,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -311,7 +312,7 @@
                             "id": "6477ac95-51ab-4cf6-a7e3-ab9c492ed946",
                             "label": "box_20",
                             "useGameObjectName": true,
-                            "x": 918,
+                            "x": 941,
                             "y": 656,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -325,7 +326,7 @@
                             "id": "acdd14b7-119d-4abc-9bf9-1b35676252b6",
                             "label": "box_21",
                             "useGameObjectName": true,
-                            "x": 1000,
+                            "x": 1023,
                             "y": 656,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -339,7 +340,7 @@
                             "id": "d6cf713f-3417-470a-9154-64304bb19d07",
                             "label": "box_22",
                             "useGameObjectName": true,
-                            "x": 1079,
+                            "x": 1102,
                             "y": 656,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -353,7 +354,7 @@
                             "id": "0a8a2a45-bd12-43bf-b356-4d90b35dc236",
                             "label": "box_23",
                             "useGameObjectName": true,
-                            "x": 918,
+                            "x": 941,
                             "y": 744,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -367,7 +368,7 @@
                             "id": "73a67a2b-8d89-47f9-8a6f-43c2e12d4fb2",
                             "label": "box_24",
                             "useGameObjectName": true,
-                            "x": 1000,
+                            "x": 1023,
                             "y": 744,
                             "scaleX": 0.5,
                             "scaleY": 0.5,
@@ -394,8 +395,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1539,
-                            "y": 55,
+                            "x": 1564,
+                            "y": 57,
                             "scaleY": 1.25,
                             "angle": -180,
                             "originY": 1
@@ -408,8 +409,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1536,
-                            "y": 58,
+                            "x": 1561,
+                            "y": 60,
                             "scaleY": 1.26,
                             "angle": -90,
                             "originY": 0
@@ -422,8 +423,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1625,
-                            "y": 56,
+                            "x": 1650,
+                            "y": 58,
                             "scaleY": 1.22,
                             "originY": 0
                         },
@@ -435,8 +436,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1536,
-                            "y": 142,
+                            "x": 1561,
+                            "y": 144,
                             "scaleY": 1.26,
                             "angle": -90,
                             "originY": 0
@@ -449,8 +450,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1622,
-                            "y": 58,
+                            "x": 1647,
+                            "y": 60,
                             "scaleY": 1.18,
                             "angle": -90,
                             "originY": 0
@@ -463,8 +464,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1705,
-                            "y": 55,
+                            "x": 1730,
+                            "y": 57,
                             "scaleY": 1.24,
                             "originY": 0
                         },
@@ -476,8 +477,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1623,
-                            "y": 142,
+                            "x": 1648,
+                            "y": 144,
                             "scaleY": 1.16,
                             "angle": -90,
                             "originY": 0
@@ -490,8 +491,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1458,
-                            "y": 139,
+                            "x": 1483,
+                            "y": 141,
                             "scaleY": 1.23,
                             "angle": -180,
                             "originY": 1
@@ -504,8 +505,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1455,
-                            "y": 142,
+                            "x": 1480,
+                            "y": 144,
                             "scaleY": 1.22,
                             "angle": -90,
                             "originY": 0
@@ -518,8 +519,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1539,
-                            "y": 145,
+                            "x": 1564,
+                            "y": 147,
                             "scaleY": 1.15,
                             "originY": 0
                         },
@@ -531,8 +532,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1455,
-                            "y": 225,
+                            "x": 1480,
+                            "y": 227,
                             "scaleY": 1.16,
                             "angle": 90,
                             "originY": 1
@@ -545,8 +546,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1625,
-                            "y": 140,
+                            "x": 1650,
+                            "y": 142,
                             "scaleY": 1.18,
                             "angle": -180,
                             "originY": 1
@@ -559,8 +560,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1537,
-                            "y": 225,
+                            "x": 1562,
+                            "y": 227,
                             "scaleY": 1.22,
                             "angle": 90,
                             "originY": 1
@@ -573,8 +574,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1705,
-                            "y": 140,
+                            "x": 1730,
+                            "y": 142,
                             "scaleY": 1.18,
                             "originY": 0
                         },
@@ -586,8 +587,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1623,
-                            "y": 225,
+                            "x": 1648,
+                            "y": 227,
                             "scaleY": 1.16,
                             "angle": 90,
                             "originY": 1
@@ -600,8 +601,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1702,
-                            "y": 142,
+                            "x": 1727,
+                            "y": 144,
                             "scaleY": 1.24,
                             "angle": -90,
                             "originY": 0
@@ -614,8 +615,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1789,
-                            "y": 139,
+                            "x": 1814,
+                            "y": 141,
                             "scaleY": 1.18,
                             "originY": 0
                         },
@@ -627,8 +628,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1703,
-                            "y": 225,
+                            "x": 1728,
+                            "y": 227,
                             "scaleY": 1.24,
                             "angle": 90,
                             "originY": 1
@@ -641,8 +642,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1376,
-                            "y": 222,
+                            "x": 1401,
+                            "y": 224,
                             "scaleY": 1.23,
                             "originY": 0
                         },
@@ -654,8 +655,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1373,
-                            "y": 225,
+                            "x": 1398,
+                            "y": 227,
                             "scaleY": 1.23,
                             "angle": 90,
                             "originY": 1
@@ -668,8 +669,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1458,
-                            "y": 227,
+                            "x": 1483,
+                            "y": 229,
                             "scaleY": 1.14,
                             "originY": 0
                         },
@@ -681,8 +682,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1373,
-                            "y": 308,
+                            "x": 1398,
+                            "y": 310,
                             "scaleY": 1.21,
                             "angle": 90,
                             "originY": 1
@@ -695,8 +696,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1539,
-                            "y": 223,
+                            "x": 1564,
+                            "y": 225,
                             "scaleY": 1.2,
                             "originY": 0
                         },
@@ -708,8 +709,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1456,
-                            "y": 308,
+                            "x": 1481,
+                            "y": 310,
                             "scaleY": 1.16,
                             "angle": 90,
                             "originY": 1
@@ -722,8 +723,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1625,
-                            "y": 223,
+                            "x": 1650,
+                            "y": 225,
                             "scaleY": 1.2,
                             "originY": 0
                         },
@@ -735,8 +736,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1537,
-                            "y": 308,
+                            "x": 1562,
+                            "y": 310,
                             "scaleY": 1.24,
                             "angle": 90,
                             "originY": 1
@@ -749,8 +750,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1705,
-                            "y": 223,
+                            "x": 1730,
+                            "y": 225,
                             "scaleY": 1.2,
                             "originY": 0
                         },
@@ -762,8 +763,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1623,
-                            "y": 308,
+                            "x": 1648,
+                            "y": 310,
                             "scaleY": 1.16,
                             "angle": 90,
                             "originY": 1
@@ -776,8 +777,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1788,
-                            "y": 223,
+                            "x": 1813,
+                            "y": 225,
                             "scaleY": 1.2,
                             "originY": 0
                         },
@@ -789,8 +790,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1703,
-                            "y": 308,
+                            "x": 1728,
+                            "y": 310,
                             "scaleY": 1.21,
                             "angle": 90,
                             "originY": 1
@@ -803,8 +804,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1786,
-                            "y": 225,
+                            "x": 1811,
+                            "y": 227,
                             "scaleY": 1.26,
                             "angle": 90,
                             "originY": 1
@@ -817,8 +818,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1874,
-                            "y": 223,
+                            "x": 1899,
+                            "y": 225,
                             "scaleY": 1.18,
                             "originY": 0
                         },
@@ -830,8 +831,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1786,
-                            "y": 308,
+                            "x": 1811,
+                            "y": 310,
                             "scaleY": 1.23,
                             "angle": 90,
                             "originY": 1
@@ -844,8 +845,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1376,
-                            "y": 305,
+                            "x": 1401,
+                            "y": 307,
                             "scaleY": 1.23,
                             "originY": 0
                         },
@@ -857,8 +858,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1458,
-                            "y": 306,
+                            "x": 1483,
+                            "y": 308,
                             "scaleY": 1.2,
                             "originY": 0
                         },
@@ -870,8 +871,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1373,
-                            "y": 391,
+                            "x": 1398,
+                            "y": 393,
                             "scaleY": 1.21,
                             "angle": 90,
                             "originY": 1
@@ -884,8 +885,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1539,
-                            "y": 306,
+                            "x": 1564,
+                            "y": 308,
                             "scaleY": 1.2,
                             "originY": 0
                         },
@@ -897,8 +898,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1456,
-                            "y": 391,
+                            "x": 1481,
+                            "y": 393,
                             "scaleY": 1.16,
                             "angle": 90,
                             "originY": 1
@@ -911,8 +912,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1625,
-                            "y": 306,
+                            "x": 1650,
+                            "y": 308,
                             "scaleY": 1.2,
                             "originY": 0
                         },
@@ -924,8 +925,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1537,
-                            "y": 391,
+                            "x": 1562,
+                            "y": 393,
                             "scaleY": 1.24,
                             "angle": 90,
                             "originY": 1
@@ -938,8 +939,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1705,
-                            "y": 306,
+                            "x": 1730,
+                            "y": 308,
                             "scaleY": 1.2,
                             "originY": 0
                         },
@@ -951,8 +952,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1623,
-                            "y": 391,
+                            "x": 1648,
+                            "y": 393,
                             "scaleY": 1.16,
                             "angle": 90,
                             "originY": 1
@@ -965,8 +966,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1788,
-                            "y": 306,
+                            "x": 1813,
+                            "y": 308,
                             "scaleY": 1.2,
                             "originY": 0
                         },
@@ -978,8 +979,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1703,
-                            "y": 391,
+                            "x": 1728,
+                            "y": 393,
                             "scaleY": 1.21,
                             "angle": 90,
                             "originY": 1
@@ -992,8 +993,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1874,
-                            "y": 305,
+                            "x": 1899,
+                            "y": 307,
                             "scaleY": 1.18,
                             "originY": 0
                         },
@@ -1005,8 +1006,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1786,
-                            "y": 392,
+                            "x": 1811,
+                            "y": 394,
                             "scaleY": 1.221,
                             "angle": 90,
                             "originY": 1
@@ -1019,8 +1020,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1458,
-                            "y": 387,
+                            "x": 1483,
+                            "y": 389,
                             "scaleY": 1.19,
                             "originY": 0
                         },
@@ -1032,8 +1033,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1539,
-                            "y": 393,
+                            "x": 1564,
+                            "y": 395,
                             "scaleY": 1.18,
                             "originY": 0
                         },
@@ -1045,8 +1046,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1455,
-                            "y": 475,
+                            "x": 1480,
+                            "y": 477,
                             "scaleY": 1.23,
                             "angle": 90,
                             "originY": 1
@@ -1059,8 +1060,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1625,
-                            "y": 389,
+                            "x": 1650,
+                            "y": 391,
                             "scaleY": 1.2,
                             "originY": 0
                         },
@@ -1072,8 +1073,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1537,
-                            "y": 475,
+                            "x": 1562,
+                            "y": 477,
                             "scaleY": 1.25,
                             "angle": 90,
                             "originY": 1
@@ -1086,8 +1087,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1705,
-                            "y": 389,
+                            "x": 1730,
+                            "y": 391,
                             "scaleY": 1.2,
                             "originY": 0
                         },
@@ -1099,8 +1100,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1624,
-                            "y": 475,
+                            "x": 1649,
+                            "y": 477,
                             "scaleY": 1.13,
                             "angle": 90,
                             "originY": 1
@@ -1113,8 +1114,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1788,
-                            "y": 389,
+                            "x": 1813,
+                            "y": 391,
                             "scaleY": 1.18,
                             "originY": 0
                         },
@@ -1126,8 +1127,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1701,
-                            "y": 474,
+                            "x": 1726,
+                            "y": 476,
                             "scaleY": 1.2,
                             "angle": 90,
                             "originY": 1
@@ -1140,8 +1141,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1540,
-                            "y": 472,
+                            "x": 1565,
+                            "y": 474,
                             "scaleY": 1.22,
                             "originY": 0
                         },
@@ -1153,8 +1154,8 @@
                             "texture": {
                                 "key": "notSelectedLine"
                             },
-                            "x": 1625,
-                            "y": 477,
+                            "x": 1650,
+                            "y": 479,
                             "scaleY": 1.15,
                             "originY": 0
                         },
@@ -1166,8 +1167,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1537,
-                            "y": 558,
+                            "x": 1562,
+                            "y": 560,
                             "scaleY": 1.25,
                             "angle": 90,
                             "originY": 1
@@ -1180,8 +1181,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1705,
-                            "y": 471,
+                            "x": 1730,
+                            "y": 473,
                             "scaleY": 1.25,
                             "originY": 0
                         },
@@ -1193,8 +1194,8 @@
                             "texture": {
                                 "key": "SelectedLine"
                             },
-                            "x": 1624,
-                            "y": 558,
+                            "x": 1649,
+                            "y": 560,
                             "scaleY": 1.14,
                             "angle": 90,
                             "originY": 1
@@ -1374,107 +1375,9 @@
                 },
                 {
                     "type": "Container",
-                    "id": "c9e96a2a-263b-47bf-927b-da42a9246b5a",
-                    "label": "container_setting",
-                    "list": [
-                        {
-                            "type": "Image",
-                            "id": "dfa18f88-75c2-4168-9dff-3a65bc9a3879",
-                            "label": "setting_bar",
-                            "scope": "CLASS",
-                            "texture": {
-                                "key": "setting_bar"
-                            },
-                            "x": 348,
-                            "y": 875,
-                            "scaleX": 0
-                        },
-                        {
-                            "type": "Image",
-                            "id": "e7e412e2-9f52-4ef3-8d7d-efe72474e330",
-                            "label": "sound",
-                            "scope": "CLASS",
-                            "texture": {
-                                "key": "sound"
-                            },
-                            "x": 349,
-                            "y": 875,
-                            "scaleX": 0.5,
-                            "scaleY": 0.5
-                        },
-                        {
-                            "type": "Image",
-                            "id": "75f9e185-ff16-43e4-b705-2f9b1c368065",
-                            "label": "music",
-                            "scope": "CLASS",
-                            "texture": {
-                                "key": "music"
-                            },
-                            "x": 349,
-                            "y": 875,
-                            "scaleX": 0.5,
-                            "scaleY": 0.5
-                        },
-                        {
-                            "type": "Image",
-                            "id": "ecf0cd99-cd4d-4b71-acc2-844cebf49d97",
-                            "label": "setting",
-                            "scope": "CLASS",
-                            "texture": {
-                                "key": "setting"
-                            },
-                            "x": 349,
-                            "y": 875,
-                            "scaleX": 0.7,
-                            "scaleY": 0.7
-                        }
-                    ]
-                },
-                {
-                    "type": "Container",
                     "id": "dcbd17dd-d3eb-440b-8448-689dfa3ae87b",
                     "label": "container_timer",
                     "list": [
-                        {
-                            "type": "Image",
-                            "id": "a4c0be86-ff48-4885-bf6d-e0fb9fec0031",
-                            "label": "pause",
-                            "scope": "CLASS",
-                            "texture": {
-                                "key": "pause"
-                            },
-                            "x": 910,
-                            "y": 920,
-                            "scaleX": 0.7,
-                            "scaleY": 0.7
-                        },
-                        {
-                            "type": "Image",
-                            "id": "812fe581-d71b-40f2-9aa9-8ad0a518c482",
-                            "label": "restart",
-                            "scope": "CLASS",
-                            "texture": {
-                                "key": "backward"
-                            },
-                            "x": 960,
-                            "y": 920,
-                            "scaleX": 0.7,
-                            "scaleY": 0.7,
-                            "visible": false
-                        },
-                        {
-                            "type": "Image",
-                            "id": "793e6f38-81bc-4cf5-bf47-1f9c5850dece",
-                            "label": "stop",
-                            "scope": "CLASS",
-                            "texture": {
-                                "key": "stop"
-                            },
-                            "x": 1010,
-                            "y": 920,
-                            "scaleX": 0.7,
-                            "scaleY": 0.7
-                        },
                         {
                             "type": "Container",
                             "id": "0b64f72a-2e58-4f38-9e6e-99d80963b91d",
@@ -1572,19 +1475,6 @@
                 },
                 {
                     "type": "Image",
-                    "id": "a2a9e23c-b507-4a43-8984-fb173b9d0175",
-                    "label": "winner",
-                    "scope": "CLASS",
-                    "texture": {
-                        "key": "winner"
-                    },
-                    "x": 960,
-                    "y": -63,
-                    "scaleX": 0.8,
-                    "scaleY": 0.8
-                },
-                {
-                    "type": "Image",
                     "id": "671ab069-fb1e-403b-9f92-e59fca18ead1",
                     "label": "player_1_image",
                     "scope": "CLASS",
@@ -1608,6 +1498,109 @@
                     "y": 610,
                     "scaleX": 0.3,
                     "scaleY": 0.3
+                },
+                {
+                    "type": "Container",
+                    "id": "2afd4fc9-63d9-4dd6-8fcd-799b96d6ef3b",
+                    "label": "container_symbols",
+                    "scope": "CLASS"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "c9e96a2a-263b-47bf-927b-da42a9246b5a",
+            "label": "container_setting",
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "dfa18f88-75c2-4168-9dff-3a65bc9a3879",
+                    "label": "setting_bar",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "setting_bar"
+                    },
+                    "x": 348,
+                    "y": 875,
+                    "scaleX": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "e7e412e2-9f52-4ef3-8d7d-efe72474e330",
+                    "label": "sound",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "sound"
+                    },
+                    "x": 349,
+                    "y": 875,
+                    "scaleX": 0.5,
+                    "scaleY": 0.5
+                },
+                {
+                    "type": "Image",
+                    "id": "75f9e185-ff16-43e4-b705-2f9b1c368065",
+                    "label": "music",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "music"
+                    },
+                    "x": 349,
+                    "y": 875,
+                    "scaleX": 0.5,
+                    "scaleY": 0.5
+                },
+                {
+                    "type": "Image",
+                    "id": "ecf0cd99-cd4d-4b71-acc2-844cebf49d97",
+                    "label": "setting",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "setting"
+                    },
+                    "x": 349,
+                    "y": 875,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Image",
+                    "id": "a4c0be86-ff48-4885-bf6d-e0fb9fec0031",
+                    "label": "pause",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "pause"
+                    },
+                    "x": 915,
+                    "y": 920,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Image",
+                    "id": "812fe581-d71b-40f2-9aa9-8ad0a518c482",
+                    "label": "restart",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "backward"
+                    },
+                    "x": 985,
+                    "y": 920,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Image",
+                    "id": "793e6f38-81bc-4cf5-bf47-1f9c5850dece",
+                    "label": "stop",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "stop"
+                    },
+                    "x": 1055,
+                    "y": 920,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
                 }
             ]
         }

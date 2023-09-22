@@ -122,8 +122,8 @@ class Home extends Phaser.Scene {
 
 		this.editorCreate();
 		this.oTweenManager = new TweenManager(this);
-		this.container_mode_1.setSize(512, 512);
-		this.container_mode_2.setSize(512, 512);
+		this.container_mode_1.setSize(350, 400);
+		this.container_mode_2.setSize(350, 400);
 		this.container_mode_1.setInteractive();
 		this.container_mode_2.setInteractive();
 		this.container_mode_1.on('pointerover', () => {

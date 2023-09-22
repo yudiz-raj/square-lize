@@ -12,9 +12,9 @@ class TweenManager {
             yoyo: true,
             onComplete: () => {
                 let isBot;
-                target.name == "container_mode_2"? isBot = true: isBot = false;
+                target.name == "container_mode_2" ? isBot = true : isBot = false;
                 this.oScene.scene.stop("Home");
-                this.oScene.scene.start("Level", {isBot});
+                this.oScene.scene.start("Level", { isBot });
             }
         });
     }
@@ -73,6 +73,17 @@ class TweenManager {
         })
     }
     winnerImageAnimation(target) {
+        console.log(target);
+        let winImage;
+        if (target.texture.key == "bothPlayer") {
+            winImage = "draw"; 
+        }
+        else{
+            winImage = "winner";
+        }
+        const winner = this.oScene.add.image(985, -63, winImage);
+        winner.scaleX = 0.8;
+        winner.scaleY = 0.8;
         let scale = 0;
         if (target.texture.key == "bothPlayer") {
             scale = 1;
@@ -81,7 +92,7 @@ class TweenManager {
             scale = 0.9;
         }
         this.oScene.add.tween({
-            targets: target,
+            targets: target,    
             scaleX: scale,
             scaleY: scale,
             ease: "power2",
@@ -89,7 +100,7 @@ class TweenManager {
             onComplete: () => {
                 this.userTurnTween.stop();
                 this.oScene.add.tween({
-                    targets: this.oScene.winner,
+                    targets: winner,
                     x: 960,
                     y: 240,
                     ease: "power2",

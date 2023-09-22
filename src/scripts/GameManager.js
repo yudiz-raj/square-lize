@@ -162,13 +162,15 @@ class GameManager {
         ]
     }
     checkForWinner() {
+        console.log(window.innerWidth, window.innerHeight);
         if (aCompletedBox.length == 24) {
+            this.oScene.body.setAlpha(0.5);
+            aNotSelectedLines.splice(0, aNotSelectedLines.length);
             if (nPlayer_1Score > nPlayer_2Score) {
                 sWinnerName = "avatar_1";
             }
             if (nPlayer_1Score == nPlayer_2Score) {
                 sWinnerName = "bothPlayer";
-                this.oScene.winner.setTexture("draw");
             }
             if (nPlayer_1Score < nPlayer_2Score) {
                 sWinnerName = "avatar_2";
@@ -199,19 +201,20 @@ class GameManager {
             line.disableInteractive();
         });
         clearInterval(this.timerInterval);
-        winner_image = this.oScene.add.image(960, 540, sWinnerName).setScale(3, 3);
+        winner_image = this.oScene.add.image(985, 540, sWinnerName).setScale(3, 3);
         aCompletedBox.splice(0, aCompletedBox.length);
         this.oScene.oTweenManager.winnerImageAnimation(winner_image);
     }
     setPauseButtonEnabled() {
         this.oScene.restart.setInteractive();
         this.oScene.restart.on('pointerover', () => {
-			this.oScene.restart.setScale(0.8);
-		});
-		this.oScene.restart.on('pointerout', () => {
-			this.oScene.restart.setScale(0.7);
-		});
+            this.oScene.restart.setScale(0.8);
+        });
+        this.oScene.restart.on('pointerout', () => {
+            this.oScene.restart.setScale(0.7);
+        });
         this.oScene.restart.on("pointerdown", () => {
+            this.oScene.container_symbols.list.splice(0, this.oScene.container_symbols.list.length);
             this.oScene.restart.setScale(0.7);
             this.oScene.container_lines.list.forEach((line) => {
                 line.name = "";
@@ -225,16 +228,19 @@ class GameManager {
             time = 15;
             winner = false;
             aCompletedBox.splice(0, aCompletedBox.length);
-            this.oScene.scene.restart("Level");
+            this.oScene.scene.stop("Level");
+            const isBot = this.oScene.mode.isBot;
+            this.oScene.scene.start("Level", { isBot });
         });
         this.oScene.stop.setInteractive();
         this.oScene.stop.on('pointerover', () => {
-			this.oScene.stop.setScale(0.8);
-		});
-		this.oScene.stop.on('pointerout', () => {
-			this.oScene.stop.setScale(0.7);
-		});
+            this.oScene.stop.setScale(0.8);
+        });
+        this.oScene.stop.on('pointerout', () => {
+            this.oScene.stop.setScale(0.7);
+        });
         this.oScene.stop.on("pointerdown", () => {
+            this.oScene.container_symbols.list.splice(0, this.oScene.container_symbols.list.length);
             this.oScene.stop.setScale(0.7);
             this.oScene.container_lines.list.forEach((line) => {
                 line.name = "";
@@ -253,11 +259,11 @@ class GameManager {
         });
         this.oScene.pause.setInteractive();
         this.oScene.pause.on('pointerover', () => {
-			this.oScene.pause.setScale(0.8);
-		});
-		this.oScene.pause.on('pointerout', () => {
-			this.oScene.pause.setScale(0.7);
-		});
+            this.oScene.pause.setScale(0.8);
+        });
+        this.oScene.pause.on('pointerout', () => {
+            this.oScene.pause.setScale(0.7);
+        });
         this.oScene.pause.on("pointerdown", () => {
             this.oScene.pause.setScale(0.7);
             if (this.oScene.pause.texture.key == "pause") {
@@ -281,6 +287,7 @@ class GameManager {
     setTimer(maxTime) {
         time = maxTime;
         this.oScene.oTweenManager.userTurnAnimation(userTurn);
+        userTurn ? this.oScene.player_2Time.setText("00:" + "00") : this.oScene.player_1Time.setText("00:" + "00");
         this.timerInterval = setInterval(() => {
             time >= 10 ?
                 userTurn ? this.oScene.player_1Time.setText("00:" + time) : this.oScene.player_2Time.setText("00:" + time) :
@@ -323,6 +330,7 @@ class GameManager {
                     this.oScene.player_1Score.setText(nPlayer_1Score);
                     this.oScene.player_2Score.setText(nPlayer_2Score);
                     const sign = this.oScene.add.image(this.oScene.container_boxs.list[index].x, this.oScene.container_boxs.list[index].y, sSignName).setScale(0.1);
+                    this.oScene.container_symbols.add(sign);
                     repeatTurn = true;
                 }
             }
