@@ -43,9 +43,11 @@ class Preload extends Phaser.Scene {
 		const loading_bar = this.add.image(960, 887, "loading_bar");
 		container_loading.add(loading_bar);
 
-		// loading
-		const loading = this.add.image(479, 887, "loading");
-		container_loading.add(loading);
+		// innerBar
+		const innerBar = this.add.image(704, 887, "loading");
+		innerBar.setOrigin(0, 0.5);
+		innerBar.visible = false;
+		container_loading.add(innerBar);
 
 		// LoadingTxt
 		const loadingTxt = this.add.text(792, 836, "", {});
@@ -69,22 +71,11 @@ class Preload extends Phaser.Scene {
 		percentageTxt.setStyle({ "align": "center", "fontFamily": "Washington", "fontSize": "48px" });
 		container_loading.add(percentageTxt);
 
-		// percentageTxt_1
-		const percentageTxt_1 = this.add.text(1177, 836, "", {});
-		percentageTxt_1.setOrigin(0.5, 0.5);
-		percentageTxt_1.tintTopLeft = 11901313;
-		percentageTxt_1.tintTopRight = 11901313;
-		percentageTxt_1.tintBottomLeft = 11901313;
-		percentageTxt_1.tintBottomRight = 11901313;
-		percentageTxt_1.text = "%";
-		percentageTxt_1.setStyle({ "align": "center", "fontFamily": "Washington", "fontSize": "48px" });
-		container_loading.add(percentageTxt_1);
-
 		// progress (components)
 		new PreloadText(progress);
 
 		this.logoPrefab = logoPrefab;
-		this.loading = loading;
+		this.innerBar = innerBar;
 		this.loadingTxt = loadingTxt;
 		this.percentageTxt = percentageTxt;
 
@@ -94,7 +85,7 @@ class Preload extends Phaser.Scene {
 	/** @type {LogoPrefab} */
 	logoPrefab;
 	/** @type {Phaser.GameObjects.Image} */
-	loading;
+	innerBar;
 	/** @type {Phaser.GameObjects.Text} */
 	loadingTxt;
 	/** @type {Phaser.GameObjects.Text} */
@@ -109,7 +100,76 @@ class Preload extends Phaser.Scene {
 		this.editorCreate();
 
 		this.editorPreload();
-		this.load.on(Phaser.Loader.Events.COMPLETE, () => this.scene.start("Home"));
+		this.logoAnimation();
+		this.isGameLoaded1 = false;
+		this.isGameLoaded2 = false;
+		this.load.on(Phaser.Loader.Events.COMPLETE, (p) => {
+			this.isGameLoaded1 = true;
+		});
+
+		this.innerBarWidth = this.innerBar.displayWidth;
+
+		this.maskGraphics = this.make.graphics();
+		this.maskGraphics.fillStyle(0xffffff);
+		this.maskGraphics.fillRect(
+			this.innerBar.x,
+			this.innerBar.y - this.innerBar.displayHeight / 2,
+			this.innerBar.displayWidth,
+			this.innerBar.displayHeight
+		);
+
+		this.innerBar.setMask(this.maskGraphics.createGeometryMask());
+
+		const loadingDuration = 3000;
+		const intervalDuration = 30;
+		const numIntervals = loadingDuration / intervalDuration;
+		let currentInterval = 0;
+		const progressIncrement = 1 / numIntervals;
+
+		const updateProgressBar = () => {
+			this.innerBar.setVisible(true);
+			const currentProgress = currentInterval * progressIncrement;
+			this.maskGraphics.clear();
+			this.maskGraphics.fillStyle(0xffffff);
+			this.maskGraphics.fillRect(
+				this.innerBar.x,
+				this.innerBar.y - this.innerBar.displayHeight / 2,
+				this.innerBarWidth * currentProgress,
+				this.innerBar.displayHeight
+			);
+			this.percentageTxt.setText((currentProgress * 100).toFixed(0) + '%');
+			currentInterval++;
+			if (currentProgress >= 1) {
+				clearInterval(progressInterval);
+				this.isGameLoaded2 = true;
+			}
+		};
+
+		const progressInterval = setInterval(updateProgressBar, intervalDuration);
+	}
+	logoAnimation() {
+        this.tweens.add({
+            targets: this.logoPrefab.avatar_1,
+            angle: 10,
+            ease: "power2",
+            duration: 800,
+            yoyo: true,
+            onComplete: () => {
+                this.tweens.add({
+                    targets: this.logoPrefab.avatar_2,
+                    angle: -30,
+                    ease: "power2",
+                    duration: 800,
+                    yoyo: true,
+                });
+            }
+        })
+    }
+	update() {
+		if (this.isGameLoaded1 && this.isGameLoaded2) {
+			this.scene.stop("Preload");
+			this.scene.start("Home");
+		}
 	}
 
 	/* END-USER-CODE */

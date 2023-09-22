@@ -208,6 +208,7 @@ class GameManager {
             this.oScene.container_lines.list.forEach((line) => {
                 line.name = "";
             });
+            userTurn = true;
             nLifePlayer_1 = 0;
             nLifePlayer_2 = 0;
             nPlayer_1Score = 0;
@@ -222,6 +223,7 @@ class GameManager {
             this.oScene.container_lines.list.forEach((line) => {
                 line.name = "";
             });
+            userTurn = true;
             nLifePlayer_1 = 0;
             nLifePlayer_2 = 0;
             nPlayer_1Score = 0;
@@ -308,7 +310,17 @@ class GameManager {
         clearInterval(this.timerInterval);
         this.setTimer(15);
         if (this.oScene.mode.isBot && !userTurn) {
+            this.oScene.pause.disableInteractive();
+            this.oScene.container_lines.list.forEach((line) => {
+                line.disableInteractive();
+            });
             this.oScene.botTurn();
+        }
+        if (this.oScene.mode.isBot && userTurn) {
+            this.oScene.pause.setInteractive();
+            aNotSelectedLines.forEach((line) => {
+                line.setInteractive();
+            });
         }
     }
 }

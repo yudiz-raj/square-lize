@@ -746,6 +746,18 @@ class Level extends Phaser.Scene {
 		player_1Score.setStyle({ "fontFamily": "Washington", "fontSize": "48px" });
 		container_players.add(player_1Score);
 
+		// player_1Text
+		const player_1Text = this.add.text(495, 322, "", {});
+		player_1Text.angle = 5;
+		player_1Text.setOrigin(0.5, 0.5);
+		player_1Text.tintTopLeft = 8415232;
+		player_1Text.tintTopRight = 8415232;
+		player_1Text.tintBottomLeft = 8415232;
+		player_1Text.tintBottomRight = 8415232;
+		player_1Text.text = "Player 1";
+		player_1Text.setStyle({ "fontFamily": "Washington", "fontSize": "60px" });
+		container_players.add(player_1Text);
+
 		// player_2
 		const player_2 = this.add.image(1529, 580, "player_2");
 		player_2.scaleX = 0.8;
@@ -785,6 +797,18 @@ class Level extends Phaser.Scene {
 		player_2Score.setStyle({ "fontFamily": "Washington", "fontSize": "48px" });
 		container_players.add(player_2Score);
 
+		// player_2Text
+		const player_2Text = this.add.text(1489, 486, "", {});
+		player_2Text.angle = -5;
+		player_2Text.setOrigin(0.5, 0.5);
+		player_2Text.tintTopLeft = 22912;
+		player_2Text.tintTopRight = 22912;
+		player_2Text.tintBottomLeft = 22912;
+		player_2Text.tintBottomRight = 22912;
+		player_2Text.text = "Player 2";
+		player_2Text.setStyle({ "fontFamily": "Washington", "fontSize": "60px" });
+		container_players.add(player_2Text);
+
 		// container_setting
 		const container_setting = this.add.container(0, 0);
 		body.add(container_setting);
@@ -817,7 +841,7 @@ class Level extends Phaser.Scene {
 		body.add(container_timer);
 
 		// pause
-		const pause = this.add.image(890, 920, "pause");
+		const pause = this.add.image(910, 920, "pause");
 		pause.scaleX = 0.7;
 		pause.scaleY = 0.7;
 		container_timer.add(pause);
@@ -826,10 +850,11 @@ class Level extends Phaser.Scene {
 		const restart = this.add.image(960, 920, "backward");
 		restart.scaleX = 0.7;
 		restart.scaleY = 0.7;
+		restart.visible = false;
 		container_timer.add(restart);
 
 		// stop
-		const stop = this.add.image(1030, 920, "stop");
+		const stop = this.add.image(1010, 920, "stop");
 		stop.scaleX = 0.7;
 		stop.scaleY = 0.7;
 		container_timer.add(stop);
@@ -904,9 +929,11 @@ class Level extends Phaser.Scene {
 		this.player_1Time = player_1Time;
 		this.scoreTitle = scoreTitle;
 		this.player_1Score = player_1Score;
+		this.player_1Text = player_1Text;
 		this.player_2Time = player_2Time;
 		this.scoreTitle_1 = scoreTitle_1;
 		this.player_2Score = player_2Score;
+		this.player_2Text = player_2Text;
 		this.setting_bar = setting_bar;
 		this.sound = sound;
 		this.music = music;
@@ -940,11 +967,15 @@ class Level extends Phaser.Scene {
 	/** @type {Phaser.GameObjects.Text} */
 	player_1Score;
 	/** @type {Phaser.GameObjects.Text} */
+	player_1Text;
+	/** @type {Phaser.GameObjects.Text} */
 	player_2Time;
 	/** @type {Phaser.GameObjects.Text} */
 	scoreTitle_1;
 	/** @type {Phaser.GameObjects.Text} */
 	player_2Score;
+	/** @type {Phaser.GameObjects.Text} */
+	player_2Text;
 	/** @type {Phaser.GameObjects.Image} */
 	setting_bar;
 	/** @type {Phaser.GameObjects.Image} */
@@ -994,12 +1025,18 @@ class Level extends Phaser.Scene {
 		this.editorCreate();
 		this.oGameManager = new GameManager(this);
 		this.oTweenManager = new TweenManager(this);
+		if (this.mode.isBot) {
+			this.player_1Text.setText("Player");
+			this.player_1Text.y -= 10;
+			this.player_2Text.setText("Computer");
+			this.player_2Text.y -= 5;
+		}
 		this.oGameManager.setTimer(15);
 		this.oGameManager.setPauseButtonEnabled();
 		this.setting.setInteractive().on("pointerdown", () => {
 			this.oTweenManager.settingAnimation();
 		});
-		this.container_lines.list.forEach((line, index) => {
+		this.container_lines.list.forEach((line) => {
 			if (line.texture.key == "SelectedLine") {
 				line.name = 'selected';
 				this.oGameManager.boxs();
@@ -1008,47 +1045,33 @@ class Level extends Phaser.Scene {
 			else {
 				aNotSelectedLines.push(line);
 				line.setInteractive().on('pointerdown', () => {
+					aNotSelectedLines.forEach((notSelectedLine, index) => {
+						if (notSelectedLine == line) {
+							aNotSelectedLines.splice(index, 1);
+						}
+					});
 					line.name = 'selected';
 					line.setTexture("SelectedLine");
 					this.oGameManager.boxs();
 					this.oGameManager.turnHandler();
 					line.disableInteractive();
-					for (let i = 0; i < aNotSelectedLines.length; i++) {
-						if (aNotSelectedLines[i] == line) {
-							aNotSelectedLines.splice(i, 1);
-						}
-						break;
-					}
 				});
 			}
 		});
 
 	}
 	botTurn() {
-		this.container_lines.list.forEach((line) => {
-			line.disableInteractive();
-		})
+
 		let nRandomLine = Math.floor(Math.random() * aNotSelectedLines.length);
-		if (aNotSelectedLines[nRandomLine].texture.key == "notSelectedLine") {
-			setTimeout(() => {
-				console.log("botTurn");
-				aNotSelectedLines[nRandomLine].name = 'selected';
-				aNotSelectedLines[nRandomLine].setTexture("SelectedLine");
-				this.oGameManager.boxs();
-				this.oGameManager.turnHandler();
-				aNotSelectedLines[nRandomLine].disableInteractive();
-				aNotSelectedLines.splice(nRandomLine, 1);
-				this.container_lines.list.forEach((line) => {
-					if (line.texture.key == "notSelectedLine") {
-						line.setInteractive();
-					}
-				});
-			}, 3000);
-			return;
-		}
-		else {
-			this.botTurn();
-		}
+		setTimeout(() => {
+			aNotSelectedLines[nRandomLine].name = 'selected';
+			aNotSelectedLines[nRandomLine].setTexture("SelectedLine");
+			this.oGameManager.boxs();
+			this.oGameManager.turnHandler();
+			aNotSelectedLines[nRandomLine].disableInteractive();
+			aNotSelectedLines.splice(nRandomLine, 1);
+		}, 3000);
+		return;
 	}
 	/* END-USER-CODE */
 }

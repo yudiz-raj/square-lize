@@ -60,7 +60,7 @@ class Home extends Phaser.Scene {
 		mode_1.tintBottomLeft = 8415232;
 		mode_1.tintBottomRight = 8415232;
 		mode_1.text = "Mode 1";
-		mode_1.setStyle({ "fontFamily": "Washington", "fontSize": "60px" });
+		mode_1.setStyle({ "fontFamily": "Washington", "fontSize": "68px" });
 		container_mode_1.add(mode_1);
 
 		// container_mode_2
@@ -100,7 +100,7 @@ class Home extends Phaser.Scene {
 		mode_2.tintBottomLeft = 22912;
 		mode_2.tintBottomRight = 22912;
 		mode_2.text = "Mode 2";
-		mode_2.setStyle({ "fontFamily": "Washington", "fontSize": "60px" });
+		mode_2.setStyle({ "fontFamily": "Washington", "fontSize": "68px" });
 		container_mode_2.add(mode_2);
 
 		this.container_mode_1 = container_mode_1;

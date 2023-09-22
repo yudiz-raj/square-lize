@@ -42,16 +42,6 @@
                 "key": "InputManager"
             },
             {
-                "url": "assets/images/loading.png",
-                "type": "image",
-                "key": "loading"
-            },
-            {
-                "url": "assets/images/loading_bar.png",
-                "type": "image",
-                "key": "loading_bar"
-            },
-            {
                 "url": "assets/images/music.png",
                 "type": "image",
                 "key": "music"

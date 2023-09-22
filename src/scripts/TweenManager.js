@@ -2,24 +2,6 @@ class TweenManager {
     constructor(oScene) {
         this.oScene = oScene;
     }
-    logoAnimation() {
-        this.oScene.add.tween({
-            targets: this.oScene.logoPrefab.avatar_1,
-            angle: 10,
-            ease: "power2",
-            duration: 800,
-            yoyo: true,
-            onComplete: () => {
-                this.oScene.add.tween({
-                    targets: this.oScene.logoPrefab.avatar_2,
-                    angle: -30,
-                    ease: "power2",
-                    duration: 800,
-                    yoyo: true,
-                });
-            }
-        })
-    }
     buttonAnimation(target) {
         this.oScene.add.tween({
             targets: target,
@@ -30,8 +12,7 @@ class TweenManager {
             yoyo: true,
             onComplete: () => {
                 let isBot;
-                target.name = "container_mode_2"? isBot = true: isBot = false;
-                
+                target.name == "container_mode_2"? isBot = true: isBot = false;
                 this.oScene.scene.stop("Home");
                 this.oScene.scene.start("Level", {isBot});
             }

@@ -68,13 +68,15 @@
                 {
                     "type": "Image",
                     "id": "d794cab6-ce15-43c0-96e6-dd3e8dcfed11",
-                    "label": "loading",
+                    "label": "innerBar",
                     "scope": "CLASS",
                     "texture": {
                         "key": "loading"
                     },
-                    "x": 479,
-                    "y": 887
+                    "x": 704,
+                    "y": 887,
+                    "originX": 0,
+                    "visible": false
                 },
                 {
                     "type": "Text",
@@ -108,23 +110,6 @@
                     "tintBottomLeft": "#B59981",
                     "tintBottomRight": "#B59981",
                     "text": "0",
-                    "align": "center",
-                    "fontFamily": "Washington",
-                    "fontSize": "48px"
-                },
-                {
-                    "type": "Text",
-                    "id": "c9948e5a-3652-488c-ae2f-3cb4fbc9aa7e",
-                    "label": "percentageTxt_1",
-                    "x": 1177,
-                    "y": 836,
-                    "originX": 0.5,
-                    "originY": 0.5,
-                    "tintTopLeft": "#B59981",
-                    "tintTopRight": "#B59981",
-                    "tintBottomLeft": "#B59981",
-                    "tintBottomRight": "#B59981",
-                    "text": "%",
                     "align": "center",
                     "fontFamily": "Washington",
                     "fontSize": "48px"

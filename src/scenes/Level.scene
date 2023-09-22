@@ -1271,6 +1271,24 @@
                             "fontSize": "48px"
                         },
                         {
+                            "type": "Text",
+                            "id": "e18699ab-2f00-421d-ba65-ad8ba62ba71c",
+                            "label": "player_1Text",
+                            "scope": "CLASS",
+                            "x": 495,
+                            "y": 322,
+                            "angle": 5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "tintTopLeft": "#806800",
+                            "tintTopRight": "#806800",
+                            "tintBottomLeft": "#806800",
+                            "tintBottomRight": "#806800",
+                            "text": "Player 1",
+                            "fontFamily": "Washington",
+                            "fontSize": "60px"
+                        },
+                        {
                             "type": "Image",
                             "id": "a82c54c9-acb9-4c70-9327-1a9538bc1ffd",
                             "label": "player_2",
@@ -1333,6 +1351,24 @@
                             "text": "0",
                             "fontFamily": "Washington",
                             "fontSize": "48px"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "cfe1331b-5e09-4f0d-b5ba-77066a5f2997",
+                            "label": "player_2Text",
+                            "scope": "CLASS",
+                            "x": 1489,
+                            "y": 486,
+                            "angle": -5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "tintTopLeft": "#005980",
+                            "tintTopRight": "#005980",
+                            "tintBottomLeft": "#005980",
+                            "tintBottomRight": "#005980",
+                            "text": "Player 2",
+                            "fontFamily": "Washington",
+                            "fontSize": "60px"
                         }
                     ]
                 },
@@ -1407,7 +1443,7 @@
                             "texture": {
                                 "key": "pause"
                             },
-                            "x": 890,
+                            "x": 910,
                             "y": 920,
                             "scaleX": 0.7,
                             "scaleY": 0.7
@@ -1423,7 +1459,8 @@
                             "x": 960,
                             "y": 920,
                             "scaleX": 0.7,
-                            "scaleY": 0.7
+                            "scaleY": 0.7,
+                            "visible": false
                         },
                         {
                             "type": "Image",
@@ -1433,7 +1470,7 @@
                             "texture": {
                                 "key": "stop"
                             },
-                            "x": 1030,
+                            "x": 1010,
                             "y": 920,
                             "scaleX": 0.7,
                             "scaleY": 0.7

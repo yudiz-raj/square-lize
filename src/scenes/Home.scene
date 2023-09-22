@@ -94,7 +94,7 @@
                             "tintBottomRight": "#806800",
                             "text": "Mode 1",
                             "fontFamily": "Washington",
-                            "fontSize": "60px"
+                            "fontSize": "68px"
                         }
                     ]
                 },
@@ -168,7 +168,7 @@
                             "tintBottomRight": "#005980",
                             "text": "Mode 2",
                             "fontFamily": "Washington",
-                            "fontSize": "60px"
+                            "fontSize": "68px"
                         }
                     ]
                 }

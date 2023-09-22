@@ -17,6 +17,16 @@
                 "key": "background"
             },
             {
+                "url": "assets/images/loading.png",
+                "type": "image",
+                "key": "loading"
+            },
+            {
+                "url": "assets/images/loading_bar.png",
+                "type": "image",
+                "key": "loading_bar"
+            },
+            {
                 "url": "src/prefabs/LogoPrefab.js",
                 "type": "script",
                 "key": "LogoPrefab"
