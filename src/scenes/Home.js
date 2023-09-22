@@ -124,10 +124,26 @@ class Home extends Phaser.Scene {
 		this.oTweenManager = new TweenManager(this);
 		this.container_mode_1.setSize(512, 512);
 		this.container_mode_2.setSize(512, 512);
-		this.container_mode_1.setInteractive().on("pointerdown", () => {
+		this.container_mode_1.setInteractive();
+		this.container_mode_2.setInteractive();
+		this.container_mode_1.on('pointerover', () => {
+			this.container_mode_1.setScale(1.05);
+		});
+		this.container_mode_1.on('pointerout', () => {
+			this.container_mode_1.setScale(1);
+		});
+		this.container_mode_1.on("pointerdown", () => {
+			this.container_mode_1.setScale(1);
 			this.oTweenManager.buttonAnimation(this.container_mode_1);
 		});
-		this.container_mode_2.setInteractive().on("pointerdown", () => {
+		this.container_mode_2.on('pointerover', () => {
+			this.container_mode_2.setScale(1.05);
+		});
+		this.container_mode_2.on('pointerout', () => {
+			this.container_mode_2.setScale(1);
+		});
+		this.container_mode_2.on("pointerdown", () => {
+			this.container_mode_2.setScale(1);
 			this.oTweenManager.buttonAnimation(this.container_mode_2);
 		});
 	}

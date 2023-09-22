@@ -204,7 +204,15 @@ class GameManager {
         this.oScene.oTweenManager.winnerImageAnimation(winner_image);
     }
     setPauseButtonEnabled() {
-        this.oScene.restart.setInteractive().on("pointerdown", () => {
+        this.oScene.restart.setInteractive();
+        this.oScene.restart.on('pointerover', () => {
+			this.oScene.restart.setScale(0.8);
+		});
+		this.oScene.restart.on('pointerout', () => {
+			this.oScene.restart.setScale(0.7);
+		});
+        this.oScene.restart.on("pointerdown", () => {
+            this.oScene.restart.setScale(0.7);
             this.oScene.container_lines.list.forEach((line) => {
                 line.name = "";
             });
@@ -219,7 +227,15 @@ class GameManager {
             aCompletedBox.splice(0, aCompletedBox.length);
             this.oScene.scene.restart("Level");
         });
-        this.oScene.stop.setInteractive().on("pointerdown", () => {
+        this.oScene.stop.setInteractive();
+        this.oScene.stop.on('pointerover', () => {
+			this.oScene.stop.setScale(0.8);
+		});
+		this.oScene.stop.on('pointerout', () => {
+			this.oScene.stop.setScale(0.7);
+		});
+        this.oScene.stop.on("pointerdown", () => {
+            this.oScene.stop.setScale(0.7);
             this.oScene.container_lines.list.forEach((line) => {
                 line.name = "";
             });
@@ -235,7 +251,15 @@ class GameManager {
             this.oScene.scene.stop("Level");
             this.oScene.scene.start("Home");
         });
-        this.oScene.pause.setInteractive().on("pointerdown", () => {
+        this.oScene.pause.setInteractive();
+        this.oScene.pause.on('pointerover', () => {
+			this.oScene.pause.setScale(0.8);
+		});
+		this.oScene.pause.on('pointerout', () => {
+			this.oScene.pause.setScale(0.7);
+		});
+        this.oScene.pause.on("pointerdown", () => {
+            this.oScene.pause.setScale(0.7);
             if (this.oScene.pause.texture.key == "pause") {
                 this.oScene.pause.setTexture("resume");
                 this.oScene.container_lines.list.forEach((line) => {

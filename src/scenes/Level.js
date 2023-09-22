@@ -1033,7 +1033,15 @@ class Level extends Phaser.Scene {
 		}
 		this.oGameManager.setTimer(15);
 		this.oGameManager.setPauseButtonEnabled();
-		this.setting.setInteractive().on("pointerdown", () => {
+		this.setting.setInteractive();
+		this.setting.on('pointerover', () => {
+			this.setting.setScale(0.8);
+		});
+		this.setting.on('pointerout', () => {
+			this.setting.setScale(0.7);
+		});
+		this.setting.on("pointerdown", () => {
+			this.setting.setScale(0.7);
 			this.oTweenManager.settingAnimation();
 		});
 		this.container_lines.list.forEach((line) => {
@@ -1070,7 +1078,7 @@ class Level extends Phaser.Scene {
 			this.oGameManager.turnHandler();
 			aNotSelectedLines[nRandomLine].disableInteractive();
 			aNotSelectedLines.splice(nRandomLine, 1);
-		}, 3000);
+		}, 2000);
 		return;
 	}
 	/* END-USER-CODE */
