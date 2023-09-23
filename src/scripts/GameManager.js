@@ -162,9 +162,7 @@ class GameManager {
         ]
     }
     checkForWinner() {
-        console.log(window.innerWidth, window.innerHeight);
         if (aCompletedBox.length == 24) {
-            this.oScene.body.setAlpha(0.5);
             aNotSelectedLines.splice(0, aNotSelectedLines.length);
             if (nPlayer_1Score > nPlayer_2Score) {
                 sWinnerName = "avatar_1";
@@ -190,6 +188,8 @@ class GameManager {
         }
     }
     winnerDeclaration(sWinnerName) {
+        this.oScene.pause.disableInteractive();
+        this.oScene.body.setAlpha(0.5);
         winner = true;
         time = 15;
         nLifePlayer_1 = 0;
@@ -208,9 +208,11 @@ class GameManager {
     setPauseButtonEnabled() {
         this.oScene.restart.setInteractive();
         this.oScene.restart.on('pointerover', () => {
+            this.oScene.input.setDefaultCursor('pointer');
             this.oScene.restart.setScale(0.8);
         });
         this.oScene.restart.on('pointerout', () => {
+            this.oScene.input.setDefaultCursor('default');
             this.oScene.restart.setScale(0.7);
         });
         this.oScene.restart.on("pointerdown", () => {
@@ -234,9 +236,11 @@ class GameManager {
         });
         this.oScene.stop.setInteractive();
         this.oScene.stop.on('pointerover', () => {
+            this.oScene.input.setDefaultCursor('pointer');
             this.oScene.stop.setScale(0.8);
         });
         this.oScene.stop.on('pointerout', () => {
+            this.oScene.input.setDefaultCursor('default');
             this.oScene.stop.setScale(0.7);
         });
         this.oScene.stop.on("pointerdown", () => {
@@ -259,9 +263,11 @@ class GameManager {
         });
         this.oScene.pause.setInteractive();
         this.oScene.pause.on('pointerover', () => {
+            this.oScene.input.setDefaultCursor('pointer');
             this.oScene.pause.setScale(0.8);
         });
         this.oScene.pause.on('pointerout', () => {
+            this.oScene.input.setDefaultCursor('default');
             this.oScene.pause.setScale(0.7);
         });
         this.oScene.pause.on("pointerdown", () => {
@@ -329,8 +335,10 @@ class GameManager {
                     userTurn ? nPlayer_1Score++ : nPlayer_2Score++;
                     this.oScene.player_1Score.setText(nPlayer_1Score);
                     this.oScene.player_2Score.setText(nPlayer_2Score);
-                    const sign = this.oScene.add.image(this.oScene.container_boxs.list[index].x, this.oScene.container_boxs.list[index].y, sSignName).setScale(0.1);
+                    const sign = this.oScene.add.image(this.oScene.container_boxs.list[index].x, this.oScene.container_boxs.list[index].y, sSignName).setScale(0);
+                    this.oScene.oTweenManager.signAnimation(sign);
                     this.oScene.container_symbols.add(sign);
+                    
                     repeatTurn = true;
                 }
             }

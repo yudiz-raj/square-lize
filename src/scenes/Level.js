@@ -31,7 +31,7 @@ class Level extends Phaser.Scene {
 		body.add(container_boxs);
 
 		// box_1
-		const box_1 = this.add.rectangle(941, 336, 170, 170);
+		const box_1 = this.add.rectangle(942, 333, 170, 170);
 		box_1.name = "box_1";
 		box_1.scaleX = 0.5;
 		box_1.scaleY = 0.5;
@@ -40,7 +40,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_1);
 
 		// box_2
-		const box_2 = this.add.rectangle(1023, 336, 170, 170);
+		const box_2 = this.add.rectangle(1025, 333, 170, 170);
 		box_2.name = "box_2";
 		box_2.scaleX = 0.5;
 		box_2.scaleY = 0.5;
@@ -49,7 +49,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_2);
 
 		// box_3
-		const box_3 = this.add.rectangle(859, 416, 170, 170);
+		const box_3 = this.add.rectangle(859, 418, 170, 170);
 		box_3.name = "box_3";
 		box_3.scaleX = 0.5;
 		box_3.scaleY = 0.5;
@@ -58,7 +58,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_3);
 
 		// box_4
-		const box_4 = this.add.rectangle(941, 416, 170, 170);
+		const box_4 = this.add.rectangle(942, 418, 170, 170);
 		box_4.name = "box_4";
 		box_4.scaleX = 0.5;
 		box_4.scaleY = 0.5;
@@ -67,7 +67,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_4);
 
 		// box_5
-		const box_5 = this.add.rectangle(1023, 416, 170, 170);
+		const box_5 = this.add.rectangle(1025, 418, 170, 170);
 		box_5.name = "box_5";
 		box_5.scaleX = 0.5;
 		box_5.scaleY = 0.5;
@@ -76,7 +76,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_5);
 
 		// box_6
-		const box_6 = this.add.rectangle(1102, 416, 170, 170);
+		const box_6 = this.add.rectangle(1107, 418, 170, 170);
 		box_6.name = "box_6";
 		box_6.scaleX = 0.5;
 		box_6.scaleY = 0.5;
@@ -85,7 +85,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_6);
 
 		// box_7
-		const box_7 = this.add.rectangle(781, 496, 170, 170);
+		const box_7 = this.add.rectangle(778, 501, 170, 170);
 		box_7.name = "box_7";
 		box_7.scaleX = 0.5;
 		box_7.scaleY = 0.5;
@@ -94,7 +94,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_7);
 
 		// box_8
-		const box_8 = this.add.rectangle(859, 496, 170, 170);
+		const box_8 = this.add.rectangle(859, 501, 170, 170);
 		box_8.name = "box_8";
 		box_8.scaleX = 0.5;
 		box_8.scaleY = 0.5;
@@ -103,7 +103,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_8);
 
 		// box_9
-		const box_9 = this.add.rectangle(941, 496, 170, 170);
+		const box_9 = this.add.rectangle(942, 501, 170, 170);
 		box_9.name = "box_9";
 		box_9.scaleX = 0.5;
 		box_9.scaleY = 0.5;
@@ -112,7 +112,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_9);
 
 		// box_10
-		const box_10 = this.add.rectangle(1023, 496, 170, 170);
+		const box_10 = this.add.rectangle(1025, 501, 170, 170);
 		box_10.name = "box_10";
 		box_10.scaleX = 0.5;
 		box_10.scaleY = 0.5;
@@ -121,7 +121,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_10);
 
 		// box_11
-		const box_11 = this.add.rectangle(1102, 496, 170, 170);
+		const box_11 = this.add.rectangle(1107, 501, 170, 170);
 		box_11.name = "box_11";
 		box_11.scaleX = 0.5;
 		box_11.scaleY = 0.5;
@@ -130,7 +130,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_11);
 
 		// box_12
-		const box_12 = this.add.rectangle(1183, 496, 170, 170);
+		const box_12 = this.add.rectangle(1191, 501, 170, 170);
 		box_12.name = "box_12";
 		box_12.scaleX = 0.5;
 		box_12.scaleY = 0.5;
@@ -139,7 +139,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_12);
 
 		// box_13
-		const box_13 = this.add.rectangle(781, 576, 170, 170);
+		const box_13 = this.add.rectangle(778, 584, 170, 170);
 		box_13.name = "box_13";
 		box_13.scaleX = 0.5;
 		box_13.scaleY = 0.5;
@@ -148,7 +148,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_13);
 
 		// box_14
-		const box_14 = this.add.rectangle(859, 576, 170, 170);
+		const box_14 = this.add.rectangle(859, 584, 170, 170);
 		box_14.name = "box_14";
 		box_14.scaleX = 0.5;
 		box_14.scaleY = 0.5;
@@ -157,7 +157,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_14);
 
 		// box_15
-		const box_15 = this.add.rectangle(941, 576, 170, 170);
+		const box_15 = this.add.rectangle(942, 584, 170, 170);
 		box_15.name = "box_15";
 		box_15.scaleX = 0.5;
 		box_15.scaleY = 0.5;
@@ -166,7 +166,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_15);
 
 		// box_16
-		const box_16 = this.add.rectangle(1023, 576, 170, 170);
+		const box_16 = this.add.rectangle(1025, 584, 170, 170);
 		box_16.name = "box_16";
 		box_16.scaleX = 0.5;
 		box_16.scaleY = 0.5;
@@ -175,7 +175,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_16);
 
 		// box_17
-		const box_17 = this.add.rectangle(1102, 576, 170, 170);
+		const box_17 = this.add.rectangle(1107, 584, 170, 170);
 		box_17.name = "box_17";
 		box_17.scaleX = 0.5;
 		box_17.scaleY = 0.5;
@@ -184,7 +184,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_17);
 
 		// box_18
-		const box_18 = this.add.rectangle(1183, 576, 170, 170);
+		const box_18 = this.add.rectangle(1191, 584, 170, 170);
 		box_18.name = "box_18";
 		box_18.scaleX = 0.5;
 		box_18.scaleY = 0.5;
@@ -193,7 +193,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_18);
 
 		// box_19
-		const box_19 = this.add.rectangle(859, 656, 170, 170);
+		const box_19 = this.add.rectangle(859, 666, 170, 170);
 		box_19.name = "box_19";
 		box_19.scaleX = 0.5;
 		box_19.scaleY = 0.5;
@@ -202,7 +202,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_19);
 
 		// box_20
-		const box_20 = this.add.rectangle(941, 656, 170, 170);
+		const box_20 = this.add.rectangle(942, 666, 170, 170);
 		box_20.name = "box_20";
 		box_20.scaleX = 0.5;
 		box_20.scaleY = 0.5;
@@ -211,7 +211,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_20);
 
 		// box_21
-		const box_21 = this.add.rectangle(1023, 656, 170, 170);
+		const box_21 = this.add.rectangle(1025, 666, 170, 170);
 		box_21.name = "box_21";
 		box_21.scaleX = 0.5;
 		box_21.scaleY = 0.5;
@@ -220,7 +220,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_21);
 
 		// box_22
-		const box_22 = this.add.rectangle(1102, 656, 170, 170);
+		const box_22 = this.add.rectangle(1107, 666, 170, 170);
 		box_22.name = "box_22";
 		box_22.scaleX = 0.5;
 		box_22.scaleY = 0.5;
@@ -229,7 +229,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_22);
 
 		// box_23
-		const box_23 = this.add.rectangle(941, 744, 170, 170);
+		const box_23 = this.add.rectangle(942, 749, 170, 170);
 		box_23.name = "box_23";
 		box_23.scaleX = 0.5;
 		box_23.scaleY = 0.5;
@@ -238,7 +238,7 @@ class Level extends Phaser.Scene {
 		container_boxs.add(box_23);
 
 		// box_24
-		const box_24 = this.add.rectangle(1023, 744, 170, 170);
+		const box_24 = this.add.rectangle(1025, 749, 170, 170);
 		box_24.name = "box_24";
 		box_24.scaleX = 0.5;
 		box_24.scaleY = 0.5;
@@ -629,7 +629,7 @@ class Level extends Phaser.Scene {
 		container_lines.add(line_50);
 
 		// line_51
-		const line_51 = this.add.image(1562, 477, "notSelectedLine");
+		const line_51 = this.add.image(1562, 474, "notSelectedLine");
 		line_51.name = "line_51";
 		line_51.scaleY = 1.25;
 		line_51.angle = 90;
@@ -644,7 +644,7 @@ class Level extends Phaser.Scene {
 		container_lines.add(line_52);
 
 		// line_53
-		const line_53 = this.add.image(1649, 477, "notSelectedLine");
+		const line_53 = this.add.image(1649, 474, "notSelectedLine");
 		line_53.name = "line_53";
 		line_53.scaleY = 1.13;
 		line_53.angle = 90;
@@ -674,7 +674,7 @@ class Level extends Phaser.Scene {
 		container_lines.add(line_56);
 
 		// line_57
-		const line_57 = this.add.image(1650, 479, "notSelectedLine");
+		const line_57 = this.add.image(1650, 476, "notSelectedLine");
 		line_57.name = "line_57";
 		line_57.scaleY = 1.15;
 		line_57.setOrigin(0.5, 0);
@@ -1036,9 +1036,11 @@ class Level extends Phaser.Scene {
 		this.oGameManager.setPauseButtonEnabled();
 		this.setting.setInteractive();
 		this.setting.on('pointerover', () => {
+			this.input.setDefaultCursor('pointer');
 			this.setting.setScale(0.8);
 		});
 		this.setting.on('pointerout', () => {
+			this.input.setDefaultCursor('default');
 			this.setting.setScale(0.7);
 		});
 		this.setting.on("pointerdown", () => {
@@ -1074,6 +1076,8 @@ class Level extends Phaser.Scene {
 
 		let nRandomLine = Math.floor(Math.random() * aNotSelectedLines.length);
 		setTimeout(() => {
+			console.log(nRandomLine);
+			console.log(aNotSelectedLines[nRandomLine]);
 			aNotSelectedLines[nRandomLine].name = 'selected';
 			aNotSelectedLines[nRandomLine].setTexture("SelectedLine");
 			this.oGameManager.boxs();

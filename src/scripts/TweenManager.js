@@ -19,6 +19,7 @@ class TweenManager {
         });
     }
     settingAnimation() {
+        this.oScene.setting.disableInteractive();
         if (this.oScene.setting_bar.scaleX == 1) {
             this.scale = 0;
             this.soundX = 349;
@@ -52,6 +53,29 @@ class TweenManager {
             angle: +360,
             ease: "power2",
             duration: 200,
+            onComplete: () => {
+                this.oScene.setting.setInteractive();
+            }
+        });
+    }
+    signAnimation(target){
+        this.oScene.add.tween({
+            targets: target,
+            scaleX: 0.1,
+            scaleY: 0.1,
+            angle: -5,
+            ease: "power2",
+            duration: 200,
+            onComplete: () => {
+                target.setAngle(0);
+                this.oScene.add.tween({
+                    targets: target,
+                    angle: +10,
+                    ease: "power2",
+                    duration: 200,
+                    yoyo: true
+                });
+            }
         });
     }
     userTurnAnimation(userTurn) {
@@ -76,9 +100,9 @@ class TweenManager {
         console.log(target);
         let winImage;
         if (target.texture.key == "bothPlayer") {
-            winImage = "draw"; 
+            winImage = "draw";
         }
-        else{
+        else {
             winImage = "winner";
         }
         const winner = this.oScene.add.image(985, -63, winImage);
@@ -92,7 +116,7 @@ class TweenManager {
             scale = 0.9;
         }
         this.oScene.add.tween({
-            targets: target,    
+            targets: target,
             scaleX: scale,
             scaleY: scale,
             ease: "power2",

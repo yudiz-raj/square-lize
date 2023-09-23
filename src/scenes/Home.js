@@ -127,9 +127,11 @@ class Home extends Phaser.Scene {
 		this.container_mode_1.setInteractive();
 		this.container_mode_2.setInteractive();
 		this.container_mode_1.on('pointerover', () => {
+			this.input.setDefaultCursor('pointer');
 			this.container_mode_1.setScale(1.05);
 		});
 		this.container_mode_1.on('pointerout', () => {
+			this.input.setDefaultCursor('default');
 			this.container_mode_1.setScale(1);
 		});
 		this.container_mode_1.on("pointerdown", () => {
@@ -137,9 +139,11 @@ class Home extends Phaser.Scene {
 			this.oTweenManager.buttonAnimation(this.container_mode_1);
 		});
 		this.container_mode_2.on('pointerover', () => {
+			this.input.setDefaultCursor('pointer');
 			this.container_mode_2.setScale(1.05);
 		});
 		this.container_mode_2.on('pointerout', () => {
+			this.input.setDefaultCursor('default');
 			this.container_mode_2.setScale(1);
 		});
 		this.container_mode_2.on("pointerdown", () => {
