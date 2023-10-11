@@ -188,7 +188,6 @@ class GameManager {
         }
     }
     winnerDeclaration(sWinnerName) {
-        this.oScene.pause.disableInteractive();
         this.oScene.body.setAlpha(0.5);
         winner = true;
         time = 15;

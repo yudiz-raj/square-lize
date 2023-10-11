@@ -122,6 +122,7 @@ class TweenManager {
             ease: "power2",
             duration: 1000,
             onComplete: () => {
+                this.oScene.pause.disableInteractive();
                 this.userTurnTween.stop();
                 this.oScene.add.tween({
                     targets: winner,
