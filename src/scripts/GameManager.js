@@ -189,6 +189,7 @@ class GameManager {
     }
     winnerDeclaration(sWinnerName) {
         this.oScene.body.setAlpha(0.5);
+        this.oScene.oSoundManager.playSound(this.oScene.oSoundManager.winningSound, false);
         winner = true;
         time = 15;
         nLifePlayer_1 = 0;
@@ -215,6 +216,10 @@ class GameManager {
             this.oScene.restart.setScale(0.7);
         });
         this.oScene.restart.on("pointerdown", () => {
+            this.oScene.oSoundManager.stopSound(this.oScene.oSoundManager.backgroundMusic, false);
+            if (this.oScene.sound_icon.texture.key == "sound") {
+                this.oScene.oSoundManager.playSound(this.oScene.oSoundManager.clickSound, false);
+            }
             this.oScene.container_symbols.list.splice(0, this.oScene.container_symbols.list.length);
             this.oScene.restart.setScale(0.7);
             this.oScene.container_lines.list.forEach((line) => {
@@ -243,6 +248,10 @@ class GameManager {
             this.oScene.stop.setScale(0.7);
         });
         this.oScene.stop.on("pointerdown", () => {
+            this.oScene.oSoundManager.stopSound(this.oScene.oSoundManager.backgroundMusic, false);
+            if (this.oScene.sound_icon.texture.key == "sound") {
+                this.oScene.oSoundManager.playSound(this.oScene.oSoundManager.clickSound, false);
+            }
             this.oScene.container_symbols.list.splice(0, this.oScene.container_symbols.list.length);
             this.oScene.stop.setScale(0.7);
             this.oScene.container_lines.list.forEach((line) => {
@@ -270,6 +279,9 @@ class GameManager {
             this.oScene.pause.setScale(0.7);
         });
         this.oScene.pause.on("pointerdown", () => {
+            if (this.oScene.sound_icon.texture.key == "sound") {
+                this.oScene.oSoundManager.playSound(this.oScene.oSoundManager.clickSound, false);
+            }
             this.oScene.pause.setScale(0.7);
             if (this.oScene.pause.texture.key == "pause") {
                 this.oScene.pause.setTexture("resume");
@@ -337,7 +349,7 @@ class GameManager {
                     const sign = this.oScene.add.image(this.oScene.container_boxs.list[index].x, this.oScene.container_boxs.list[index].y, sSignName).setScale(0);
                     this.oScene.oTweenManager.signAnimation(sign);
                     this.oScene.container_symbols.add(sign);
-                    
+
                     repeatTurn = true;
                 }
             }

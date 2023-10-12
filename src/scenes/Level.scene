@@ -1527,7 +1527,7 @@
                 {
                     "type": "Image",
                     "id": "e7e412e2-9f52-4ef3-8d7d-efe72474e330",
-                    "label": "sound",
+                    "label": "sound_icon",
                     "scope": "CLASS",
                     "texture": {
                         "key": "sound"

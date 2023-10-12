@@ -122,6 +122,9 @@ class Home extends Phaser.Scene {
 
 		this.editorCreate();
 		this.oTweenManager = new TweenManager(this);
+		this.oSoundManager = new SoundManager(this);
+		localStorage.setItem("isSoundOn", true);
+		localStorage.setItem("isMusicOn", true);
 		this.container_mode_1.setSize(350, 400);
 		this.container_mode_2.setSize(350, 400);
 		this.container_mode_1.setInteractive();
@@ -135,6 +138,8 @@ class Home extends Phaser.Scene {
 			this.container_mode_1.setScale(1);
 		});
 		this.container_mode_1.on("pointerdown", () => {
+			this.oSoundManager.playSound(this.oSoundManager.clickSound, false);
+			this.input.setDefaultCursor('default');
 			this.container_mode_1.setScale(1);
 			this.oTweenManager.buttonAnimation(this.container_mode_1);
 		});
@@ -147,6 +152,8 @@ class Home extends Phaser.Scene {
 			this.container_mode_2.setScale(1);
 		});
 		this.container_mode_2.on("pointerdown", () => {
+			this.oSoundManager.playSound(this.oSoundManager.clickSound, false);
+			this.input.setDefaultCursor('default');
 			this.container_mode_2.setScale(1);
 			this.oTweenManager.buttonAnimation(this.container_mode_2);
 		});

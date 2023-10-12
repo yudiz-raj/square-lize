@@ -2,6 +2,13 @@
     "section1": {
         "files": [
             {
+                "url": [
+                    "assets/sounds/background.mp3"
+                ],
+                "type": "audio",
+                "key": "background"
+            },
+            {
                 "url": "assets/images/backward.png",
                 "type": "image",
                 "key": "backward"
@@ -10,6 +17,13 @@
                 "url": "assets/images/bothPlayer.png",
                 "type": "image",
                 "key": "bothPlayer"
+            },
+            {
+                "url": [
+                    "assets/sounds/click.mp3"
+                ],
+                "type": "audio",
+                "key": "click"
             },
             {
                 "url": "assets/images/computer.png",
@@ -52,6 +66,16 @@
                 "key": "notSelectedLine"
             },
             {
+                "url": "assets/images/off-music.png",
+                "type": "image",
+                "key": "off-music"
+            },
+            {
+                "url": "assets/images/off-sound.png",
+                "type": "image",
+                "key": "off-sound"
+            },
+            {
                 "url": "assets/images/pause.png",
                 "type": "image",
                 "key": "pause"
@@ -75,6 +99,13 @@
                 "url": "assets/images/player_2Icon.png",
                 "type": "image",
                 "key": "player_2Icon"
+            },
+            {
+                "url": [
+                    "assets/sounds/put-stick.mp3"
+                ],
+                "type": "audio",
+                "key": "put-stick"
             },
             {
                 "url": "assets/images/resume.png",
@@ -130,6 +161,13 @@
                 "url": "assets/images/winner.png",
                 "type": "image",
                 "key": "winner"
+            },
+            {
+                "url": [
+                    "assets/sounds/winning.mp3"
+                ],
+                "type": "audio",
+                "key": "winning"
             }
         ]
     },

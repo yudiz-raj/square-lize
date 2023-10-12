@@ -884,11 +884,11 @@ class Level extends Phaser.Scene {
 		setting_bar.scaleX = 0;
 		container_setting.add(setting_bar);
 
-		// sound
-		const sound = this.add.image(349, 875, "sound");
-		sound.scaleX = 0.5;
-		sound.scaleY = 0.5;
-		container_setting.add(sound);
+		// sound_icon
+		const sound_icon = this.add.image(349, 875, "sound");
+		sound_icon.scaleX = 0.5;
+		sound_icon.scaleY = 0.5;
+		container_setting.add(sound_icon);
 
 		// music
 		const music = this.add.image(349, 875, "music");
@@ -943,7 +943,7 @@ class Level extends Phaser.Scene {
 		this.container_symbols = container_symbols;
 		this.body = body;
 		this.setting_bar = setting_bar;
-		this.sound = sound;
+		this.sound_icon = sound_icon;
 		this.music = music;
 		this.setting = setting;
 		this.pause = pause;
@@ -1000,7 +1000,7 @@ class Level extends Phaser.Scene {
 	/** @type {Phaser.GameObjects.Image} */
 	setting_bar;
 	/** @type {Phaser.GameObjects.Image} */
-	sound;
+	sound_icon;
 	/** @type {Phaser.GameObjects.Image} */
 	music;
 	/** @type {Phaser.GameObjects.Image} */
@@ -1017,15 +1017,33 @@ class Level extends Phaser.Scene {
 	// Write more your code here
 	init(mode) {
 		this.mode = mode;
-		console.log(this.mode.isBot);
 	}
 
 	create() {
 		aNotSelectedLines = [];
 
 		this.editorCreate();
+		this.oSoundManager = new SoundManager(this);
 		this.oGameManager = new GameManager(this);
 		this.oTweenManager = new TweenManager(this);
+		console.log(localStorage.getItem("isSoundOn"));
+		if (localStorage.getItem("isSoundOn") == "true") {
+			this.sound_icon.setTexture("sound");
+			localStorage.setItem("isSoundOn", true);
+		} else {
+			this.sound_icon.setTexture("off-sound");
+			localStorage.setItem("isSoundOn", false);
+		}
+		if (localStorage.getItem("isMusicOn") == "true") {
+			this.music.setTexture("music");
+			localStorage.setItem("isMusicOn", true);
+			this.oSoundManager.playSound(this.oSoundManager.backgroundMusic, true);
+		} else {
+			this.music.setTexture("off-music");
+			this.oSoundManager.stopSound(this.oSoundManager.backgroundMusic, false);
+			localStorage.setItem("isMusicOn", false);
+		}
+
 		if (this.mode.isBot) {
 			this.player_1Text.setText("Player");
 			this.player_1Text.y -= 10;
@@ -1045,7 +1063,35 @@ class Level extends Phaser.Scene {
 		});
 		this.setting.on("pointerdown", () => {
 			this.setting.setScale(0.7);
+			if (this.sound_icon.texture.key == "sound") {
+				this.oSoundManager.playSound(this.oSoundManager.clickSound, false);
+			}
 			this.oTweenManager.settingAnimation();
+		});
+		this.sound_icon.setInteractive().on("pointerdown", () => {
+			if (this.sound_icon.texture.key == "sound") {
+				this.oSoundManager.playSound(this.oSoundManager.clickSound, false);
+				this.sound_icon.setTexture("off-sound");
+				localStorage.setItem("isSoundOn", false);
+			}
+			else {
+				this.sound_icon.setTexture("sound");
+				localStorage.setItem("isSoundOn", true);
+			}
+		});
+		this.music.setInteractive().on("pointerdown", () => {
+			if (this.sound_icon.texture.key == "sound") {
+				this.oSoundManager.playSound(this.oSoundManager.clickSound, false);
+			}
+			if (this.music.texture.key == "music") {
+				this.oSoundManager.stopSound(this.oSoundManager.backgroundMusic, true);
+				this.music.setTexture("off-music");
+				localStorage.setItem("isMusicOn", false);
+			} else {
+				this.oSoundManager.playSound(this.oSoundManager.backgroundMusic, true);
+				this.music.setTexture("music");
+				localStorage.setItem("isMusicOn", true);
+			}
 		});
 		this.container_lines.list.forEach((line) => {
 			if (line.texture.key == "SelectedLine") {
@@ -1056,7 +1102,9 @@ class Level extends Phaser.Scene {
 			else {
 				aNotSelectedLines.push(line);
 				line.setInteractive().on('pointerdown', () => {
-					console.log(aNotSelectedLines);
+					if (this.sound_icon.texture.key == "sound") {
+						this.oSoundManager.playSound(this.oSoundManager.strickPutSound, false);
+					}
 					aNotSelectedLines.forEach((notSelectedLine, index) => {
 						if (notSelectedLine == line) {
 							aNotSelectedLines.splice(index, 1);
@@ -1073,13 +1121,13 @@ class Level extends Phaser.Scene {
 
 	}
 	botTurn() {
-
 		let nRandomLine = Math.floor(Math.random() * aNotSelectedLines.length);
 		setTimeout(() => {
-			console.log(nRandomLine);
-			console.log(aNotSelectedLines[nRandomLine]);
 			aNotSelectedLines[nRandomLine].name = 'selected';
 			aNotSelectedLines[nRandomLine].setTexture("SelectedLine");
+			if (this.sound_icon.texture.key == "sound") {
+				this.oSoundManager.playSound(this.oSoundManager.strickPutSound, false);
+			}
 			this.oGameManager.boxs();
 			this.oGameManager.turnHandler();
 			aNotSelectedLines[nRandomLine].disableInteractive();

@@ -37,7 +37,7 @@ class TweenManager {
             duration: 200,
         });
         this.oScene.add.tween({
-            targets: this.oScene.sound,
+            targets: this.oScene.sound_icon,
             x: this.soundX,
             ease: "power2",
             duration: 200,
@@ -58,7 +58,7 @@ class TweenManager {
             }
         });
     }
-    signAnimation(target){
+    signAnimation(target) {
         this.oScene.add.tween({
             targets: target,
             scaleX: 0.1,
@@ -97,7 +97,6 @@ class TweenManager {
         })
     }
     winnerImageAnimation(target) {
-        console.log(target);
         let winImage;
         if (target.texture.key == "bothPlayer") {
             winImage = "draw";
